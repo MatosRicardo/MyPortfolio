@@ -4,12 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import SobreMim from "./SobreMim/page";
 import Projetos from "./Projetos/page";
+import Habilidades from "./habilidades/page";
 
 export default function PortfolioHomepage() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
-        <div className="container flex h-16 items-center justify-between ml-15">
+        <div className="container flex h-16 items-center justify-between ml-5">
           <div className="font-bold text-xl">
             <Link href="./" className=" hover:text-green-400 relative group">
               RicardoMatos.dev
@@ -53,7 +54,7 @@ export default function PortfolioHomepage() {
           >
             <Link href="/curriculo.pdf" download target="_blank">
               <FileText className="mr-2 h-4 w-4" />
-              Baixar Currículo
+              Baixar CV
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
           </Button>
@@ -119,7 +120,18 @@ export default function PortfolioHomepage() {
                 </Link>
               </Button>
             </div>
-
+            <Button
+              variant="outline"
+              size="sm"
+              className="hidden md:flex text-black hover:text-green-400 hover:border-green-400 group relative"
+              asChild
+            >
+              <Link href="/curriculo.pdf" download target="_blank">
+                <FileText className="mr-2 h-4 w-4" />
+                Baixar CV
+                <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              </Link>
+            </Button>
             {/* <div className="flex gap-4">
               <Button
                 asChild
@@ -146,7 +158,7 @@ export default function PortfolioHomepage() {
         </section>
       </main>
       <SobreMim />
-
+      <Habilidades />
       <Projetos />
 
       <footer className="border-t border-gray-800 py-6">
