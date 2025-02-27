@@ -59,7 +59,7 @@ export default function PortfolioHomepage() {
           </Button>
         </div>
       </header>
-      <main className="flex justify-center items-center -mt-5 bg-[url('/fundo6.avif')] bg-cover bg-center bg-no-repeat">
+      <main className="flex justify-center items-center -mt-5 bg-[url('/fundo.jpg')] bg-cover bg-center bg-no-repeat">
         <section
           id="home"
           className="container py-12 md:py-24 lg:py-32 flex flex-col items-center"
@@ -80,7 +80,7 @@ export default function PortfolioHomepage() {
             </div>
 
             <p className="text-2xl font-bold tracking-tighter sm:text-3xl mb-6">
-              <span className="text-green-400">Desenvolvedor</span> FULL-STACK
+              <span className="text-green-400">Desenvolvedor</span> Full-Stack
             </p>
 
             <div className="flex gap-4 mb-8">
