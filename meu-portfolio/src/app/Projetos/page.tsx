@@ -43,7 +43,7 @@ const projects: Project[] = [
     id: "project4",
     title: "Jogo da Velha",
     description:
-      "A React Native mobile app for tracking workouts, nutrition, and progress with integration to wearable devices.",
+      "Um pequeno jogo da velha desenvolvido em React, onde você pode se divertir jogando com um amigo. Este projeto foi criado com base no curso do Maximilian Schwarzmüller na Udemy, trazendo uma experiência interativa e dinâmica.",
     imageUrl: "/jogo.png",
     githubUrl: "https://github.com/MatosRicardo/JogoDaVelhaReact",
   },
@@ -58,11 +58,18 @@ const projects: Project[] = [
   },
   {
     id: "project6",
+    title: "Sistema Escolar",
+    description:
+      "Uma API REST desenvolvida em Java para gerenciar o cadastro de alunos e aulas. Criada durante o curso no Instituto PROA, essa API permite realizar operações como criação, leitura, atualização e exclusão (CRUD) de alunos e aulas, garantindo uma estrutura eficiente e escalável.",
+    imageUrl: "/sistemaEscolar.png",
+    githubUrl: "https://github.com/MatosRicardo/Springboot_SistemaEscolar",
+  },
+  {
+    id: "project7",
     title: "EM BREVE...",
-    description: "Veja a foto para um spoiler...",
+    description: "A foto é um spoiler do projeto que está por vir!",
     imageUrl: "/spoilerv3.jpg",
     githubUrl: "#",
-    liveUrl: "#",
   },
 ];
 
@@ -91,7 +98,9 @@ export default function ProjectsPage() {
                 />
               </div>
               <div className="w-full md:w-1/2 space-y-4">
-                <h2 className="text-2xl font-bold">{project.title}</h2>
+                <h2 className="text-2xl font-bold text-green-400">
+                  {project.title}
+                </h2>
                 <p className="text-gray-300">{project.description}</p>
                 <div className="flex gap-4">
                   <Button
