@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SobreMim from "./SobreMim/page";
+import Projetos from "./Projetos/page";
 
 export default function PortfolioHomepage() {
   return (
@@ -146,6 +147,7 @@ export default function PortfolioHomepage() {
         </section>
       </main>
       <SobreMim />
+
       <footer className="border-t border-gray-800 py-6">
         <div className="container flex flex-col items-center justify-center gap-4 md:flex-row">
           <p className="text-sm text-gray-400">

@@ -17,7 +17,7 @@ export default function SobreMim() {
           Júnior na Foundever, onde desenvolvi habilidades em atendimento
           técnico e suporte a hardware e software. Tenho experiência em React,
           Next.js, Node.js, MongoDB e MySQL, além de trabalhar com tecnologias
-          como Java, Spring Boot, HTML, CSS, Tailwind, Python eAWS.
+          como Java, Spring Boot, HTML, CSS, JS, TS, Tailwind, Python eAWS.
           <br />
           <br />
           Além do mundo da tecnologia, gosto de praticar esportes, ir ao cinema
@@ -27,7 +27,7 @@ export default function SobreMim() {
         </p>
         <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-green-400">
           <Image
-            src="/img1.jpg"
+            src="/imgSobre.jpg"
             alt="Foto de Ricardo Matos"
             fill
             className="object-cover"
