@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SobreMim() {
   return (
     <section id="about" className="container mx-auto px-6 py-12 mt-10">
-      <h1 className="text-3xl font-bold mb-6 text-center text-green-400">
+      <h1 className="text-4xl font-bold mb-6 text-center text-green-400">
         Sobre mim
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-15">

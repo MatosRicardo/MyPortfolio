@@ -50,9 +50,8 @@ export default function PortfolioHomepage() {
             size="sm"
             className="hidden md:flex text-black hover:text-green-400 hover:border-green-400 group relative"
             asChild
-            target="_blank"
           >
-            <Link href="/curriculo.pdf" download>
+            <Link href="/curriculo.pdf" download target="_blank">
               <FileText className="mr-2 h-4 w-4" />
               Baixar Currículo
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -147,7 +146,9 @@ export default function PortfolioHomepage() {
         </section>
       </main>
       <SobreMim />
+
       <Projetos />
+
       <footer className="border-t border-gray-800 py-6">
         <div className="container flex flex-col items-center justify-center gap-4 md:flex-row">
           <p className="text-sm text-gray-400">

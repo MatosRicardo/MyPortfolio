@@ -3,7 +3,6 @@ import { Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Define the type for a project
 type Project = {
   id: string;
   title: string;
@@ -13,58 +12,59 @@ type Project = {
   liveUrl?: string;
 };
 
-// Sample project data
 const projects: Project[] = [
   {
     id: "project1",
-    title: "E-commerce Platform",
+    title: "Kathon",
     description:
-      "A full-stack e-commerce solution built with Next.js, featuring real-time inventory updates and secure payment processing.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    liveUrl: "https://ecommerce-platform.example.com",
+      "A Kathon é uma plataforma inovadora que conecta estudantes de escolas públicas a hackathons promovidos por empresas, incentivando a colaboração, aprendizado e desenvolvimento de soluções criativas. O projeto foi desenvolvido utilizando React no front-end para uma interface dinâmica e interativa, Java e Spring Boot no back-end para garantir robustez e escalabilidade, e MySQL como banco de dados para armazenamento eficiente das informações. ",
+    imageUrl: "/kathon.png",
+    githubUrl: "https://github.com/Demoday-Kathon/FrontEnd-Kathon",
+    liveUrl: "https://kathon.tech",
   },
   {
     id: "project2",
-    title: "Task Management App",
+    title: "Proteção Peluda",
     description:
-      "A React-based task management application with drag-and-drop functionality and real-time collaboration features.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-    githubUrl: "https://github.com/yourusername/task-manager",
-    liveUrl: "https://task-manager.example.com",
+      "A Proteção Peluda é uma landing page desenvolvida com HTML, CSS e Figma, focada em promover a conscientização e adoção responsável de animais de estimação. O projeto apresenta um design amigável e intuitivo, planejado no Figma, garantindo uma experiência visual agradável. A estrutura em HTML organiza as seções informativas, enquanto o CSS proporciona um layout responsivo e estilizado, destacando imagens, textos e botões interativos. A página inclui informações sobre adoção, cuidados com os pets e como ajudar ONGs, incentivando a proteção e o bem-estar dos animais.",
+    imageUrl: "/Protecao.png",
+    githubUrl: "https://github.com/MatosRicardo/protecao_peluda",
+    liveUrl: "https://projeto-protecao-peluda.vercel.app",
   },
   {
     id: "project3",
-    title: "Weather Forecast Dashboard",
+    title: "CRUD",
     description:
-      "An interactive weather dashboard that provides real-time forecasts and historical weather data visualization.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-    githubUrl: "https://github.com/yourusername/weather-dashboard",
+      "Desenvolvi um CRUD de cadastro de empresas utilizando React com Tailwind CSS para a interface, proporcionando um design moderno e responsivo. No back-end, criei uma API REST com Node.js e Express, armazenando os dados temporariamente em memória, sem a utilização de um banco de dados. ",
+    imageUrl: "/CRUD.png",
+    githubUrl: "https://github.com/MatosRicardo/CRUD",
   },
   {
     id: "project4",
-    title: "Fitness Tracking Mobile App",
+    title: "Jogo da Velha",
     description:
       "A React Native mobile app for tracking workouts, nutrition, and progress with integration to wearable devices.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-    githubUrl: "https://github.com/yourusername/fitness-tracker",
+    imageUrl: "/jogo.png",
+    githubUrl: "https://github.com/MatosRicardo/JogoDaVelhaReact",
   },
   {
     id: "project5",
-    title: "AI-powered Chatbot",
+    title: "Mind7",
     description:
-      "An AI chatbot built with natural language processing capabilities, designed to assist customers with product inquiries.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-    githubUrl: "https://github.com/yourusername/ai-chatbot",
-    liveUrl: "https://ai-chatbot.example.com",
+      "A Mind7 é uma plataforma de assistência psicológica criada com HTML, CSS, JavaScript e Figma. O design intuitivo foi planejado no Figma, enquanto o JavaScript adiciona interatividade. A página oferece informações sobre profissionais, agendamentos e conteúdos sobre saúde mental.",
+    imageUrl: "/Mind7.png",
+    githubUrl: "https://github.com/MatosRicardo/Mind7",
+    liveUrl: "https://mind7.vercel.app",
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <main className="container mx-auto py-12 px-4">
-        <h1 className="text-4xl font-bold mb-12 text-center">My Projects</h1>
+    <div className="min-h-screen bg-black text-white mt-30">
+      <main id="projects" className="container mx-auto py-12 px-4 ">
+        <h1 className="text-4xl font-bold mb-12 text-center text-green-400">
+          Meus Projetos
+        </h1>
         <div className="space-y-24">
           {projects.map((project, index) => (
             <div
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                   <Button
                     asChild
                     variant="outline"
-                    className="group relative hover:text-green-400 hover:border-green-400"
+                    className="text-black group relative hover:text-green-400 hover:border-green-400"
                   >
                     <Link
                       href={project.githubUrl}
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
                     <Button
                       asChild
                       variant="outline"
-                      className="group relative hover:text-green-400 hover:border-green-400"
+                      className="text-black group relative hover:text-green-400 hover:border-green-400"
                     >
                       <Link
                         href={project.liveUrl}
