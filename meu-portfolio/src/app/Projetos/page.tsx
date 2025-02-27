@@ -26,7 +26,7 @@ const projects: Project[] = [
     id: "project2",
     title: "Proteção Peluda",
     description:
-      "A Proteção Peluda é uma landing page desenvolvida com HTML, CSS e Figma, focada em promover a conscientização e adoção responsável de animais de estimação. O projeto apresenta um design amigável e intuitivo, planejado no Figma, garantindo uma experiência visual agradável. A estrutura em HTML organiza as seções informativas, enquanto o CSS proporciona um layout responsivo e estilizado, destacando imagens, textos e botões interativos. A página inclui informações sobre adoção, cuidados com os pets e como ajudar ONGs, incentivando a proteção e o bem-estar dos animais.",
+      "A Proteção Peluda é uma landing page desenvolvida com HTML, CSS e Figma, focada em promover a conscientização e adoção responsável de animais de estimação. O projeto apresenta um design amigável e intuitivo, planejado no Figma, garantindo uma experiência visual agradável. A estrutura em HTML organiza as seções informativas, enquanto o CSS proporciona um layout responsivo e estilizado, destacando imagens, textos e botões interativos. A página inclui informações sobre adoção, lar temporario, perdi meu pet e loja, incentivando a proteção e o bem-estar dos animais.",
     imageUrl: "/Protecao.png",
     githubUrl: "https://github.com/MatosRicardo/protecao_peluda",
     liveUrl: "https://projeto-protecao-peluda.vercel.app",
@@ -55,6 +55,14 @@ const projects: Project[] = [
     imageUrl: "/Mind7.png",
     githubUrl: "https://github.com/MatosRicardo/Mind7",
     liveUrl: "https://mind7.vercel.app",
+  },
+  {
+    id: "project6",
+    title: "EM BREVE...",
+    description: "Veja a foto para um spoiler...",
+    imageUrl: "/spoilerv3.jpg",
+    githubUrl: "#",
+    liveUrl: "#",
   },
 ];
 

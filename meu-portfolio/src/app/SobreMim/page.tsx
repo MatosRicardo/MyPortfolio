@@ -17,7 +17,7 @@ export default function SobreMim() {
           Júnior na Foundever, onde desenvolvi habilidades em atendimento
           técnico e suporte a hardware e software. Tenho experiência em React,
           Next.js, Node.js, MongoDB e MySQL, além de trabalhar com tecnologias
-          como Java, Spring Boot, HTML, CSS, JS, TS, Tailwind, Python eAWS.
+          como Java, Spring Boot, HTML, CSS, JS, TS, Tailwind, Python e AWS.
           <br />
           <br />
           Além do mundo da tecnologia, gosto de praticar esportes, ir ao cinema

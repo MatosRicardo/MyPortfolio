@@ -71,7 +71,7 @@ export default function PortfolioHomepage() {
 
             <div className="relative h-[250px] w-[250px] md:h-[300px] md:w-[300px] overflow-hidden rounded-full border-4 mb-8 border-green-400">
               <Image
-                src="/capa.jpg"
+                src="/perfil.jpg"
                 alt="Your Name"
                 fill
                 className="object-cover"
