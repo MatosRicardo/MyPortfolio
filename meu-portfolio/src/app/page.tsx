@@ -7,7 +7,7 @@ export default function PortfolioHomepage() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between ml-15">
           <div className="font-bold text-xl">
             <Link href="/" className=" hover:text-green-400 relative group">
               RicardoMatos.dev
@@ -43,44 +43,22 @@ export default function PortfolioHomepage() {
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
           </nav>
-
-          {/* ADICIONAR BAIXAR CURRICULO */}
-
-          {/* <Button
+          <Button
             variant="outline"
             size="sm"
-            className="hidden md:flex hover:text-green-400 hover:border-green-400 group relative"
+            className="hidden md:flex text-black hover:text-green-400 hover:border-green-400 group relative"
+            asChild
+            target="_blank"
           >
-            <FileText className="mr-2 h-4 w-4" />
-            Resume
-            <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            <Link href="/curriculo.pdf" download>
+              <FileText className="mr-2 h-4 w-4" />
+              Baixar Currículo
+              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </Link>
           </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden text-white hover:text-green-400"
-          >
-            <span className="sr-only">Toggle menu</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          </Button> */}
         </div>
       </header>
-      <main className="flex justify-center items-center">
+      <main className="flex justify-center items-center -mt-5 bg-[url('/fundo6.avif')] bg-cover bg-center bg-no-repeat">
         <section
           id="home"
           className="container py-12 md:py-24 lg:py-32 flex flex-col items-center"
@@ -136,12 +114,6 @@ export default function PortfolioHomepage() {
                 </Link>
               </Button>
             </div>
-
-            <p className="text-gray-300 md:text-xl mb-6">
-              Sou um desenvolvedor Full Stack com conhecimento em React.js no
-              front-end e Java no back-end. Busco constantemente aprimorar
-              minhas habilidades e expandir minha rede profissional.
-            </p>
 
             {/* <div className="flex gap-4">
               <Button
