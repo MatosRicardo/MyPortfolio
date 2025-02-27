@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import SobreMim from "./SobreMim/page";
 
 export default function PortfolioHomepage() {
   return (
@@ -9,7 +10,7 @@ export default function PortfolioHomepage() {
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
         <div className="container flex h-16 items-center justify-between ml-15">
           <div className="font-bold text-xl">
-            <Link href="/" className=" hover:text-green-400 relative group">
+            <Link href="./" className=" hover:text-green-400 relative group">
               RicardoMatos.dev
             </Link>
           </div>
@@ -68,7 +69,7 @@ export default function PortfolioHomepage() {
               Olá, sou o <span className="text-green-400">Ricardo Ribeiro</span>
             </h1>
 
-            <div className="relative h-[250px] w-[250px] md:h-[300px] md:w-[300px] overflow-hidden rounded-full border-4 mb-8">
+            <div className="relative h-[250px] w-[250px] md:h-[300px] md:w-[300px] overflow-hidden rounded-full border-4 mb-8 border-green-400">
               <Image
                 src="/capa.jpg"
                 alt="Your Name"
@@ -77,6 +78,10 @@ export default function PortfolioHomepage() {
                 priority
               />
             </div>
+
+            <p className="text-2xl font-bold tracking-tighter sm:text-3xl mb-6">
+              <span className="text-green-400">Desenvolvedor</span> FULL-STACK
+            </p>
 
             <div className="flex gap-4 mb-8">
               <Button
@@ -140,33 +145,14 @@ export default function PortfolioHomepage() {
           </div>
         </section>
       </main>
-      {/* <footer className="border-t border-gray-800 py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+      <SobreMim />
+      <footer className="border-t border-gray-800 py-6">
+        <div className="container flex flex-col items-center justify-center gap-4 md:flex-row">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} YourName. All rights reserved.
+            © {new Date().getFullYear()} Ricardo Matos. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <Link
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-400 transition-colors"
-            >
-              <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Link>
-            <Link
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-400 transition-colors"
-            >
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-          </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
