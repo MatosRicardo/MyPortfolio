@@ -122,6 +122,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    @apply m-0 p-0 box-border;
   }
   body {
     @apply bg-background text-foreground;
@@ -129,4 +130,8 @@
 }
 html {
   scroll-behavior: smooth;
+}
+html,
+body {
+  @apply w-full overflow-x-hidden;
 }
