@@ -11,7 +11,7 @@ export default function Contato() {
       <h1 className="text-4xl font-bold mb-12 text-center text-green-400">
         Contatos
       </h1>
-      <section className="container flex flex-col md:flex-row items-center justify-center gap-10">
+      <section className="container flex flex-col md:flex-row items-center justify-center gap-10 px-6">
         <Image
           src="/cookie.gif"
           alt="GIF animado"
@@ -19,7 +19,7 @@ export default function Contato() {
           height={450}
           className="object-contain"
         />
-        <div className="bg-[#0a0a0a] p-10 rounded-2xl shadow-lg w-[500px] h-[350px] flex flex-col justify-center">
+        <div className="bg-[#0a0a0a] p-10 rounded-2xl shadow-lg w-full max-w-[500px] flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-green-400 mb-4">
             Vamos Conversar!
           </h2>
