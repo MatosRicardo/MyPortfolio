@@ -13,17 +13,23 @@ export default function SobreMim() {
           Computação e sou formado em Análise e Desenvolvimento de Sistemas
           (ADS). Concluí o curso do Instituto PROA e estou aprimorando meus
           conhecimentos em cloud computing na Escola da Nuvem. Minha última
-          experiência foi como Analista de Suporte Técnico Júnior na Foundever,
-          onde desenvolvi habilidades em atendimento técnico e suporte a
-          hardware e software. Tenho experiência em React, Next.js, Node.js,
-          MongoDB e MySQL, além de trabalhar com tecnologias como Java, Spring
-          Boot, HTML, CSS, JS, TS, Tailwind, Python e AWS.
+          experiência foi como Analista de Suporte Técnico Júnior, onde
+          desenvolvi habilidades em atendimento técnico e suporte a hardware e
+          software. Tenho experiência em React, Next.js, Node.js, MongoDB e
+          MySQL, além de trabalhar com tecnologias como Java, Spring Boot, HTML,
+          CSS, JS, TS, Tailwind, Python e AWS.
           <br />
           <br />
           Além do mundo da tecnologia, gosto de praticar esportes, ir ao cinema
           e curtir momentos ao ar livre em parques e museus. Acredito que
           equilibrar aprendizado, trabalho e lazer é essencial para criatividade
           e produtividade.
+          <br />
+          <br />
+          Estou sempre em busca de novas oportunidades para expandir meus
+          conhecimentos, sinta-se a vontade para olhar meus projetos e caso
+          queira entrar em contato, estou sempre aberto para novos desafios e
+          oportunidades.
         </p>
         <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-green-400">
           <Image

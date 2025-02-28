@@ -140,28 +140,6 @@ export default function PortfolioHomepage() {
                 <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Link>
             </Button>
-            {/* <div className="flex gap-4">
-              <Button
-                asChild
-                className="group relative bg-green-600 hover:bg-green-700"
-              >
-                <Link href="#contact">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Contact Me
-                  <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                asChild
-                className="group relative hover:text-green-400 hover:border-green-400"
-              >
-                <Link href="#projects">
-                  View Projects
-                  <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </Link>
-              </Button>
-            </div> */}
           </div>
         </section>
       </main>
