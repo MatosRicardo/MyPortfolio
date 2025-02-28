@@ -131,7 +131,7 @@ export default function PortfolioHomepage() {
             <Button
               variant="outline"
               size="sm"
-              className="hidden md:flex text-black hover:text-green-400 hover:border-green-400 group relative"
+              className="flex text-black hover:text-green-400 hover:border-green-400 group relative md:hidden"
               asChild
             >
               <Link href="/curriculo.pdf" download target="_blank">
