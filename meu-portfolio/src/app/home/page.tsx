@@ -11,139 +11,131 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
-        <div className="container flex h-13 items-center justify-between ml-5">
-          <div className="font-bold text-xl">
-            <Link href="./" className=" hover:text-green-400 relative group">
+        <div className="container mx-auto flex h-13 items-center justify-between px-5 md:px-10">
+          <div className="text-lg md:text-xl font-bold">
+            <Link href="/" className="hover:text-green-400 transition-colors">
               RicardoMatos.dev
             </Link>
           </div>
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-4 md:gap-6">
             <Link
-              href="/"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+              href="#home"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
             >
               Home
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link
               href="#about"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
             >
               Sobre
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
-
             <Link
               href="#skills"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
             >
               Tecnologias
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link
               href="#projects"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
             >
               Projetos
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link
               href="#contact"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
             >
               Contatos
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
           </nav>
           <Button
             variant="outline"
             size="sm"
-            className="hidden md:flex text-black hover:text-green-400 hover:border-green-400 group relative"
+            className="hidden md:flex text-black hover:text-green-400 hover:border-green-400"
             asChild
           >
             <Link href="/curriculo.pdf" download target="_blank">
               <FileText className="mr-2 h-4 w-4" />
               Baixar CV
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
           </Button>
         </div>
       </header>
-      <main className="flex justify-center items-center -mt-5 bg-[url('/fundo.jpg')] bg-cover bg-center bg-no-repeat">
+
+      <main className="flex flex-col justify-center items-center -mt-5 px-4 md:px-0 bg-[url('/fundo.jpg')] bg-cover bg-center bg-no-repeat">
         <section
           id="home"
-          className="container py-12 md:py-24 lg:py-32 flex flex-col items-center"
+          className="container py-12 md:py-24 lg:py-32 flex flex-col items-center text-center max-w-3xl mx-auto"
         >
-          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">
-              Olá, sou o <span className="text-green-400">Ricardo Ribeiro</span>
-            </h1>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter mb-6">
+            Olá, sou o <span className="text-green-400">Ricardo Ribeiro</span>
+          </h1>
 
-            <div className="relative h-[250px] w-[250px] md:h-[300px] md:w-[300px] overflow-hidden rounded-full border-4 mb-8 border-green-400">
-              <Image
-                src="/perfil.jpg"
-                alt="Your Name"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-green-400 mb-6">
+            <Image
+              src="/perfil.jpg"
+              alt="Ricardo Matos"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
 
-            <p className="text-2xl font-bold tracking-tighter sm:text-3xl mb-6">
-              <span className="text-green-400">Desenvolvedor</span> Full-Stack
-            </p>
+          <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
+            <span className="text-green-400">Desenvolvedor</span> Full-Stack
+          </p>
 
-            <div className="flex gap-4 mb-8">
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="group relative"
-              >
-                <Link
-                  href="https://github.com/MatosRicardo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" text-black hover:text-green-400 hover:border-green-400"
-                >
-                  <Github className="mr-2 h-5 w-5 " />
-                  GitHub
-                  <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="group relative"
-              >
-                <Link
-                  href="https://linkedin.com/in/ricardomatos-developer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" text-black hover:text-green-400 hover:border-green-400"
-                >
-                  <Linkedin className="mr-2 h-5 w-5" />
-                  LinkedIn
-                  <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </Link>
-              </Button>
-            </div>
+          <div className="flex flex-wrap gap-4 justify-center">
             <Button
               variant="outline"
-              size="sm"
-              className="flex text-black hover:text-green-400 hover:border-green-400 group relative md:hidden"
+              size="lg"
+              className="text-black hover:text-green-400 hover:border-green-400"
               asChild
             >
-              <Link href="/curriculo.pdf" download target="_blank">
-                <FileText className="mr-2 h-4 w-4" />
-                Baixar CV
-                <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              <Link
+                href="https://github.com/MatosRicardo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </Link>
+            </Button>
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-black hover:text-green-400 hover:border-green-400"
+              asChild
+            >
+              <Link
+                href="https://linkedin.com/in/ricardomatos-developer"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
               </Link>
             </Button>
           </div>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="flex text-black hover:text-green-400 hover:border-green-400 md:hidden mt-6"
+            asChild
+          >
+            <Link href="/curriculo.pdf" download target="_blank">
+              <FileText className="mr-2 h-4 w-4" />
+              Baixar CV
+            </Link>
+          </Button>
         </section>
       </main>
+
       <SobreMim />
       <Habilidades />
       <Projetos />
