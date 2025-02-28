@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SobreMim from "../sobremim/page";
 import Projetos from "../projetos/page";
 import Habilidades from "../habilidades/page";
+import Contato from "../contato/page";
 
 export default function Home() {
   return (
@@ -146,7 +147,7 @@ export default function Home() {
       <SobreMim />
       <Habilidades />
       <Projetos />
-
+      <Contato />
       <footer className="border-t border-gray-800 py-6">
         <div className="container flex flex-col items-center justify-center gap-4 md:flex-row">
           <p className="text-sm text-gray-400">
