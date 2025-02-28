@@ -133,5 +133,5 @@ html {
 }
 html,
 body {
-  @apply w-full overflow-x-hidden;
+  @apply w-full overflow-x-hidden h-full;
 }

@@ -35,7 +35,7 @@ export default function PortfolioHomepage() {
               href="#skills"
               className="text-sm font-medium transition-colors hover:text-green-400 relative group"
             >
-              Skills
+              Tecnologias
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link

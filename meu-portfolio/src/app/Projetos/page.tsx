@@ -69,7 +69,7 @@ const projects: Project[] = [
     title: "EM BREVE...",
     description: "A foto é um spoiler do projeto que está por vir!",
     imageUrl: "/spoilerv3.jpg",
-    githubUrl: "#",
+    githubUrl: "https://github.com/MatosRicardo",
   },
 ];
 
