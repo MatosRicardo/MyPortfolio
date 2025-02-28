@@ -10,7 +10,7 @@ export default function PortfolioHomepage() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
-        <div className="container flex h-16 items-center justify-between ml-5">
+        <div className="container flex h-13 items-center justify-between ml-5">
           <div className="font-bold text-xl">
             <Link href="./" className=" hover:text-green-400 relative group">
               RicardoMatos.dev
@@ -18,10 +18,25 @@ export default function PortfolioHomepage() {
           </div>
           <nav className="hidden md:flex gap-6">
             <Link
+              href="/"
+              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+            >
+              Home
+              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </Link>
+            <Link
               href="#about"
               className="text-sm font-medium transition-colors hover:text-green-400 relative group"
             >
               Sobre
+              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </Link>
+
+            <Link
+              href="#skills"
+              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
+            >
+              Tecnologias
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link
@@ -29,13 +44,6 @@ export default function PortfolioHomepage() {
               className="text-sm font-medium transition-colors hover:text-green-400 relative group"
             >
               Projetos
-              <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            </Link>
-            <Link
-              href="#skills"
-              className="text-sm font-medium transition-colors hover:text-green-400 relative group"
-            >
-              Tecnologias
               <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </Link>
             <Link

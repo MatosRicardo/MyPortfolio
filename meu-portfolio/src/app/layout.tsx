@@ -8,7 +8,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Ricardo Matos",
+  title: "Portfólio-Ricardo",
+  description: "Desenvolvedor Full-Stack",
+  icons: {
+    icon: "/imgSobre.jpg",
+  },
 };
 
 export default function RootLayout({

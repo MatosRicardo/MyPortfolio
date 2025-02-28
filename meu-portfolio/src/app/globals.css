@@ -128,10 +128,9 @@
     @apply bg-background text-foreground;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
+
 html,
 body {
   @apply w-full overflow-x-hidden h-full;
+  scroll-behavior: smooth;
 }
