@@ -15,12 +15,12 @@ export default function Habilidades() {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center h-screen mt-10"
+      className="flex flex-col items-center justify-center min-h-screen pt-24 pb-16"
     >
-      <h1 className="text-4xl font-bold mb-6 text-center text-green-400">
+      <h1 className="text-4xl font-bold mb-12 text-center text-green-400">
         Tecnologias
       </h1>
-      <main className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 place-items-center">
+      <main className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-14 place-items-center">
         {[
           { Icon: JavascriptOriginal, label: "JavaScript" },
           { Icon: TypescriptOriginal, label: "TypeScript" },
@@ -36,8 +36,8 @@ export default function Habilidades() {
           { Icon: PostgresqlOriginalWordmark, label: "PostgreSQL" },
         ].map(({ Icon, label }, index) => (
           <div key={index} className="flex flex-col items-center">
-            <Icon size={80} className="sm:size-100" />
-            <p className="text-white text-xs sm:text-sm mt-2">{label}</p>
+            <Icon size={90} className="sm:size-110" />
+            <p className="text-white text-sm sm:text-base mt-4">{label}</p>
           </div>
         ))}
       </main>
