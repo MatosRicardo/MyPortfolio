@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import SobreMim from "../SobreMim/page";
-import Projetos from "../Projetos/page";
-import Habilidades from "../habilidades/page";
-import Contato from "../contato/page";
+import SobreMim from "@/app/SobreMim/page";
+import Projetos from "@/app/Projetos/page";
+import Habilidades from "@/app/habilidades/page";
+import Contato from "@/app/contato/page";
 
 export default function Home() {
   return (
