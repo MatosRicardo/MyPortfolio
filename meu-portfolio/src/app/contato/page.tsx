@@ -44,7 +44,7 @@ export default function Contato() {
           </div>
         </div>
         <Image
-          src="/cookie.gif"
+          src="/gif1.gif"
           alt="GIF animado"
           width={450}
           height={450}
