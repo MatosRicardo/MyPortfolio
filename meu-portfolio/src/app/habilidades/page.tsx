@@ -5,7 +5,7 @@ import JavaOriginalWordmark from "devicons-react/lib/icons/JavaOriginalWordmark"
 import SpringOriginal from "devicons-react/lib/icons/SpringOriginal";
 import MongodbOriginal from "devicons-react/lib/icons/MongodbOriginal";
 import MysqlOriginalWordmark from "devicons-react/lib/icons/MysqlOriginalWordmark";
-import PostgresqlOriginalWordmark from "devicons-react/lib/icons/PostgresqlOriginalWordmark";
+import AmazonwebservicesOriginalWordmark from "devicons-react/lib/icons/AmazonwebservicesOriginalWordmark";
 import TailwindcssOriginal from "devicons-react/lib/icons/TailwindcssOriginal";
 import PythonOriginal from "devicons-react/lib/icons/PythonOriginal";
 import TypescriptOriginal from "devicons-react/lib/icons/TypescriptOriginal";
@@ -33,7 +33,7 @@ export default function Habilidades() {
           { Icon: SpringOriginal, label: "Spring Boot" },
           { Icon: MongodbOriginal, label: "MongoDB" },
           { Icon: MysqlOriginalWordmark, label: "MySQL" },
-          { Icon: PostgresqlOriginalWordmark, label: "PostgreSQL" },
+          { Icon: AmazonwebservicesOriginalWordmark, label: "AWS" },
         ].map(({ Icon, label }, index) => (
           <div key={index} className="flex flex-col items-center">
             <Icon size={90} className="sm:size-110" />
