@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, MessageCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,6 +26,12 @@ export default function Contato() {
               className="flex items-center gap-2 text-white hover:text-green-400 text-lg"
             >
               <Mail className="w-6 h-6" /> ricardoribeirodematos@gmail.com
+            </Link>
+            <Link
+              href="https://wa.me/5511985036906"
+              className="flex items-center gap-2 text-white hover:text-green-400 text-lg"
+            >
+              <MessageCircleIcon className="w-6 h-6" /> WhatsApp
             </Link>
             <Link
               href="https://linkedin.com/in/ricardomatos-developer"

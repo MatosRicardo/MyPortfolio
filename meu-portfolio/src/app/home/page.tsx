@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, FileText } from "lucide-react";
+import { Github, Linkedin, FileText, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SobreMim from "@/app/SobreMim/page";
@@ -55,7 +55,11 @@ export default function Home() {
             className="hidden md:flex text-black hover:text-green-400 hover:border-green-400"
             asChild
           >
-            <Link href="/curriculo.pdf" download target="_blank">
+            <Link
+              href="/Ricardo Matos - Desenvolvedor Full-Stack.pdf"
+              download
+              target="_blank"
+            >
               <FileText className="mr-2 h-4 w-4" />
               Baixar CV
             </Link>
@@ -118,6 +122,22 @@ export default function Home() {
               >
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
+              </Link>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-black hover:text-green-400 hover:border-green-400"
+              asChild
+            >
+              <Link
+                href="https://wa.me/5511985036906"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp
               </Link>
             </Button>
           </div>
