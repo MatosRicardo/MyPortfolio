@@ -60,7 +60,7 @@ const projects: Project[] = [
     id: "project6",
     title: "Sistema Escolar",
     description:
-      "Uma API REST desenvolvida em Java para gerenciar o cadastro de alunos e aulas. Criada durante o curso no Instituto PROA, essa API permite realizar operações como criação, leitura, atualização e exclusão (CRUD) de alunos e aulas, garantindo uma estrutura eficiente e escalável.",
+      "Uma API REST desenvolvida em Java com Spring Boot para gerenciar o cadastro de alunos e aulas. Criada durante o curso no Instituto PROA, essa API permite realizar operações de criação, leitura, atualização e exclusão (CRUD), garantindo uma estrutura eficiente e escalável. O banco de dados MySQL foi utilizado para armazenar e organizar as informações de forma segura e otimizada.",
     imageUrl: "/sistemaEscolar.png",
     githubUrl: "https://github.com/MatosRicardo/Springboot_SistemaEscolar",
   },
