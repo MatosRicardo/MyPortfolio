@@ -70,7 +70,7 @@ const projects: Project[] = [
     description:
       "A foto é um spoiler do projeto que está por vir!\n Feat: Beatriz Marques e Paulo Nalcino",
     imageUrl: "/spoiler.png",
-    githubUrl: "https://github.com/MatosRicardo",
+    githubUrl: "https://github.com/MatosRicardo/Fintech_Klyra",
   },
 ];
 
