@@ -1,6 +1,6 @@
 import NextjsOriginal from "devicons-react/lib/icons/NextjsOriginal";
 import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
-import { NodejsOriginal } from "devicons-react";
+import { AngularOriginal } from "devicons-react";
 import JavaOriginalWordmark from "devicons-react/lib/icons/JavaOriginalWordmark";
 import SpringOriginal from "devicons-react/lib/icons/SpringOriginal";
 import MongodbOriginal from "devicons-react/lib/icons/MongodbOriginal";
@@ -26,7 +26,7 @@ export default function Habilidades() {
           { Icon: TypescriptOriginal, label: "TypeScript" },
           { Icon: ReactOriginal, label: "React.js" },
           { Icon: NextjsOriginal, label: "Next.js" },
-          { Icon: NodejsOriginal, label: "Node.js" },
+          { Icon: AngularOriginal, label: "Angular" },
           { Icon: TailwindcssOriginal, label: "Tailwind" },
           { Icon: PythonOriginal, label: "Python" },
           { Icon: JavaOriginalWordmark, label: "Java" },
