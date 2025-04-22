@@ -78,7 +78,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-black text-white mt-30">
       <main id="projects" className="container mx-auto py-12 px-4 ">
-        <h1 className="text-4xl font-bold mb-12 text-center text-green-400">
+        <h1 className="text-4xl font-bold mb-12 text-center text-orange-600">
           Meus Projetos
         </h1>
         <div className="space-y-24">
@@ -99,7 +99,7 @@ export default function ProjectsPage() {
                 />
               </div>
               <div className="w-full md:w-1/2 space-y-4">
-                <h2 className="text-2xl font-bold text-green-400">
+                <h2 className="text-2xl font-bold text-orange-600">
                   {project.title}
                 </h2>
                 <p className="text-gray-300">{project.description}</p>

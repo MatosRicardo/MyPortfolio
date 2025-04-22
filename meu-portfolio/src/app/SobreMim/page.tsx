@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SobreMim() {
   return (
     <section id="about" className="container mx-auto px-6 py-12 mt-10">
-      <h1 className="text-4xl font-bold mb-6 text-center text-green-400">
+      <h1 className="text-4xl font-bold mb-6 text-center text-orange-600">
         Sobre mim
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-15">
@@ -30,7 +30,7 @@ export default function SobreMim() {
           queira entrar em contato, estou sempre aberto para novos desafios e
           oportunidades.
         </p>
-        <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-green-400">
+        <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-orange-600">
           <Image
             src="/imgSobre.jpg"
             alt="Foto de Ricardo Matos"

@@ -13,38 +13,38 @@ export default function Home() {
       <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
         <div className="container mx-auto flex h-13 items-center justify-between px-5 md:px-10">
           <div className="text-lg md:text-xl font-bold">
-            <Link href="/" className="hover:text-green-400 transition-colors">
+            <Link href="/" className="hover:text-orange-600 transition-colors">
               RicardoMatos.dev
             </Link>
           </div>
           <nav className="hidden md:flex gap-4 md:gap-6">
             <Link
               href="#home"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Home
             </Link>
             <Link
               href="#about"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Sobre
             </Link>
             <Link
               href="#skills"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Tecnologias
             </Link>
             <Link
               href="#projects"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Projetos
             </Link>
             <Link
               href="#contact"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-green-400"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Contatos
             </Link>
@@ -52,7 +52,7 @@ export default function Home() {
           <Button
             variant="outline"
             size="sm"
-            className="hidden md:flex text-black hover:text-green-400 hover:border-green-400"
+            className="hidden md:flex text-black hover:text-orange-600 hover:border-orange-600"
             asChild
           >
             <Link
@@ -67,16 +67,16 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col justify-center items-center -mt-5 px-4 md:px-0 bg-[url('/fundo.jpg')] bg-cover bg-center bg-no-repeat">
+      <main className="flex flex-col justify-center items-center -mt-5 px-4 md:px-0 bg-[url('/fundo5.jpg')] bg-cover bg-center bg-no-repeat">
         <section
           id="home"
           className="container py-12 md:py-24 lg:py-32 flex flex-col items-center text-center max-w-3xl mx-auto"
         >
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter mb-6">
-            Olá, sou o <span className="text-green-400">Ricardo Ribeiro</span>
+            Olá, sou o <span className="text-orange-600">Ricardo Ribeiro</span>
           </h1>
 
-          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-green-400 mb-6">
+          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-orange-600 mb-6">
             <Image
               src="/perfil.jpg"
               alt="Ricardo Matos"
@@ -87,14 +87,14 @@ export default function Home() {
           </div>
 
           <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
-            <span className="text-green-400">Desenvolvedor</span> Full-Stack
+            <span className="text-orange-600">Desenvolvedor</span> Full-Stack
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
               variant="outline"
               size="lg"
-              className="text-black hover:text-green-400 hover:border-green-400"
+              className="text-black hover:text-orange-600 hover:border-orange-600"
               asChild
             >
               <Link
@@ -111,7 +111,7 @@ export default function Home() {
             <Button
               variant="outline"
               size="lg"
-              className="text-black hover:text-green-400 hover:border-green-400"
+              className="text-black hover:text-orange-600 hover:border-orange-600"
               asChild
             >
               <Link
@@ -127,7 +127,7 @@ export default function Home() {
             <Button
               variant="outline"
               size="lg"
-              className="text-black hover:text-green-400 hover:border-green-400"
+              className="text-black hover:text-orange-600 hover:border-orange-600"
               asChild
             >
               <Link
@@ -145,7 +145,7 @@ export default function Home() {
           <Button
             variant="outline"
             size="sm"
-            className="flex text-black hover:text-green-400 hover:border-green-400 md:hidden mt-6"
+            className="flex text-black hover:text-orange-600 hover:border-orange-600 md:hidden mt-6"
             asChild
           >
             <Link href="/curriculo.pdf" download target="_blank">
