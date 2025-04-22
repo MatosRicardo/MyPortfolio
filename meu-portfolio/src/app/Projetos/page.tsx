@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                   <Button
                     asChild
                     variant="outline"
-                    className="text-black group relative hover:text-green-400 hover:border-green-400"
+                    className="text-black group relative hover:text-orange-600 hover:border-orange-600"
                   >
                     <Link
                       href={project.githubUrl}
@@ -116,14 +116,14 @@ export default function ProjectsPage() {
                     >
                       <Github className="mr-2 h-4 w-4" />
                       GitHub
-                      <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <span className="absolute inset-0 bg-orange-600/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </Link>
                   </Button>
                   {project.liveUrl && (
                     <Button
                       asChild
                       variant="outline"
-                      className="text-black group relative hover:text-green-400 hover:border-green-400"
+                      className="text-black group relative hover:text-orange-600 hover:border-orange-600"
                     >
                       <Link
                         href={project.liveUrl}
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
-                        <span className="absolute inset-0 bg-green-400/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        <span className="absolute inset-0 bg-orange-600/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
                       </Link>
                     </Button>
                   )}
