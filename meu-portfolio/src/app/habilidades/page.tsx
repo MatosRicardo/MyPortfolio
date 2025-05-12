@@ -24,9 +24,9 @@ export default function Habilidades() {
         {[
           { Icon: JavascriptOriginal, label: "JavaScript" },
           { Icon: TypescriptOriginal, label: "TypeScript" },
+          { Icon: AngularOriginal, label: "Angular" },
           { Icon: ReactOriginal, label: "React.js" },
           { Icon: NextjsOriginal, label: "Next.js" },
-          { Icon: AngularOriginal, label: "Angular" },
           { Icon: TailwindcssOriginal, label: "Tailwind" },
           { Icon: PythonOriginal, label: "Python" },
           { Icon: JavaOriginalWordmark, label: "Java" },

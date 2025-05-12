@@ -8,31 +8,30 @@ export default function SobreMim() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-15">
         <p className="text-justify leading-relaxed">
-          Sou Ricardo Matos, desenvolvedor Full Stack apaixonado por tecnologia,
-          inovação. Atualmente, estou cursando o 3º semestre de Ciência da
-          Computação e sou formado em Análise e Desenvolvimento de Sistemas
-          (ADS). Concluí o curso do Instituto PROA e estou aprimorando meus
-          conhecimentos. Minha última experiência foi como Analista de Suporte
-          Técnico Júnior, onde desenvolvi habilidades em atendimento técnico e
-          suporte a hardware e software. Tenho experiência em React, Next.js,
-          Node.js, MongoDB e MySQL, além de trabalhar com tecnologias como Java,
-          Spring Boot, HTML, CSS, JS, TS, Tailwind, Python e AWS.
+          Olá, sou o Ricardo Matos, desenvolvedor Full Stack apaixonado por
+          tecnologia e inovação. Atualmente, estou cursando o 3º semestre de
+          Ciência da Computação e sou formado em Análise e Desenvolvimento de
+          Sistemas (ADS). Concluí o curso do Instituto PROA no segundo semestre
+          de 2024 e sigo aprimorando meus conhecimentos. Atualmente, sou
+          estagiário no Itaú, atuando no squad de automação de cloud, focado na
+          linha de frente do front-end com Angular e desenvolvimento de testes
+          unitários, além de atuar com Python e Cloud.
           <br />
           <br />
           Além do mundo da tecnologia, gosto de praticar esportes, ir ao cinema
-          e curtir momentos ao ar livre em parques e museus. Acredito que
-          equilibrar aprendizado, trabalho e lazer é essencial para criatividade
-          e produtividade.
+          e curtir momentos ao ar livre. Acredito que equilibrar aprendizado,
+          trabalho e lazer é essencial para a criatividade e produtividade.
           <br />
           <br />
           Estou sempre em busca de novas oportunidades para expandir meus
-          conhecimentos, sinta-se a vontade para olhar meus projetos e caso
-          queira entrar em contato, estou sempre aberto para novos desafios e
+          conhecimentos. Sinta-se à vontade para conhecer meus projetos e, caso
+          queira entrar em contato, estou aberto para novos desafios e
           oportunidades.
         </p>
-        <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-orange-600">
+
+        <div className="relative h-[260px] w-[260px] md:h-[320px] md:w-[320px] overflow-hidden rounded-xl border-4 shadow-lg mx-auto border-white">
           <Image
-            src="/imgSobre.jpg"
+            src="/perfil_futuro.jpg"
             alt="Foto de Ricardo Matos"
             fill
             className="object-cover"

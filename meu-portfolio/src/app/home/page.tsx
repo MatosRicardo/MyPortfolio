@@ -75,19 +75,19 @@ export default function Home() {
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter mb-6">
             Olá, sou o <span className="text-orange-600">Ricardo Ribeiro</span>
           </h1>
-
           <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-orange-600 mb-6">
             <Image
-              src="/perfil.jpg"
+              src="/imgSobre.jpg"
               alt="Ricardo Matos"
               fill
               className="object-cover"
               priority
             />
           </div>
-
           <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
             <span className="text-orange-600">Desenvolvedor</span> Full-Stack
+            <br />
+            Estagiário Itaú
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
@@ -124,24 +124,7 @@ export default function Home() {
                 LinkedIn
               </Link>
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-black hover:text-orange-600 hover:border-orange-600"
-              asChild
-            >
-              <Link
-                href="https://wa.me/5511985036906"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp
-              </Link>
-            </Button>
           </div>
-
           <Button
             variant="outline"
             size="sm"
