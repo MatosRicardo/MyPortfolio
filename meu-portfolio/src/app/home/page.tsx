@@ -87,7 +87,7 @@ export default function Home() {
           <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
             <span className="text-orange-600">Desenvolvedor</span> Full-Stack
             <br />
-            Software Developer Itaú
+            Software Engineer Itaú
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
