@@ -20,7 +20,6 @@ const projects: Project[] = [
       "A Kathon é uma plataforma inovadora que conecta estudantes de escolas públicas a hackathons promovidos por empresas, incentivando a colaboração, aprendizado e desenvolvimento de soluções criativas. O projeto foi desenvolvido utilizando React no front-end para uma interface dinâmica e interativa, Java e Spring Boot no back-end para garantir robustez e escalabilidade, e MySQL como banco de dados para armazenamento eficiente das informações. ",
     imageUrl: "/kathon.png",
     githubUrl: "https://github.com/Demoday-Kathon/FrontEnd-Kathon",
-    liveUrl: "https://kathon.tech",
   },
   {
     id: "project2",
