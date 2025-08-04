@@ -130,7 +130,7 @@ export default function ProjectsPage() {
                         rel="noopener noreferrer"
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                        Visitar Site
                         <span className="absolute inset-0 bg-orange-600/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
                       </Link>
                     </Button>
