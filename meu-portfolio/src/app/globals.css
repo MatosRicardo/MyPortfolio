@@ -134,3 +134,8 @@ body {
   @apply w-full overflow-x-hidden h-full;
   scroll-behavior: smooth;
 }
+
+::selection {
+  background: oklch(0.72 0.16 45);
+  color: white;
+}

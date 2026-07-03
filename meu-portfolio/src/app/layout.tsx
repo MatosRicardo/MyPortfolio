@@ -8,10 +8,18 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio-Ricardo",
-  description: "Desenvolvedor Full-Stack",
+  title: "Ricardo Matos | Desenvolvedor Full Stack",
+  description:
+    "Portfólio de Ricardo Matos, desenvolvedor Full Stack com foco em React, Next.js, Angular, AWS e soluções modernas.",
+  keywords: ["Ricardo Matos", "Desenvolvedor Full Stack", "React", "Next.js", "Angular", "AWS"],
   icons: {
     icon: "/perfil.jpg",
+  },
+  openGraph: {
+    title: "Ricardo Matos | Desenvolvedor Full Stack",
+    description:
+      "Portfólio de Ricardo Matos, desenvolvedor Full Stack com foco em React, Next.js, Angular, AWS e soluções modernas.",
+    type: "website",
   },
 };
 
@@ -21,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   );

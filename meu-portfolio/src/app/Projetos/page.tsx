@@ -10,6 +10,7 @@ type Project = {
   imageUrl: string;
   githubUrl: string;
   liveUrl?: string;
+  tags: string[];
 };
 
 const projects: Project[] = [
@@ -17,96 +18,111 @@ const projects: Project[] = [
     id: "project1",
     title: "Kathon",
     description:
-      "A Kathon é uma plataforma inovadora que conecta estudantes de escolas públicas a hackathons promovidos por empresas, incentivando a colaboração, aprendizado e desenvolvimento de soluções criativas. O projeto foi desenvolvido utilizando React no front-end para uma interface dinâmica e interativa, Java e Spring Boot no back-end para garantir robustez e escalabilidade, e MySQL como banco de dados para armazenamento eficiente das informações. ",
+      "Plataforma voltada para conectar estudantes a hackathons e oportunidades reais de aprendizado e networking com empresas.",
     imageUrl: "/kathon.png",
     githubUrl: "https://github.com/Demoday-Kathon/FrontEnd-Kathon",
+    tags: ["React", "Spring Boot", "MySQL"],
   },
   {
     id: "project2",
     title: "Proteção Peluda",
     description:
-      "A Proteção Peluda é uma landing page desenvolvida com HTML, CSS e Figma, focada em promover a conscientização e adoção responsável de animais de estimação. O projeto apresenta um design amigável e intuitivo, planejado no Figma, garantindo uma experiência visual agradável. A estrutura em HTML organiza as seções informativas, enquanto o CSS proporciona um layout responsivo e estilizado, destacando imagens, textos e botões interativos. A página inclui informações sobre adoção, lar temporario, perdi meu pet e loja, incentivando a proteção e o bem-estar dos animais.",
+      "Landing page responsiva e visualmente cuidada para promover adoção responsável e conscientização sobre animais.",
     imageUrl: "/Protecao.png",
     githubUrl: "https://github.com/MatosRicardo/protecao_peluda",
     liveUrl: "https://projeto-protecao-peluda.vercel.app",
+    tags: ["HTML", "CSS", "Figma"],
   },
   {
     id: "project3",
     title: "CRUD",
     description:
-      "Desenvolvi um CRUD de cadastro de empresas utilizando React com Tailwind CSS para a interface, proporcionando um design moderno e responsivo. No back-end, criei uma API REST com Node.js e Express, armazenando os dados temporariamente em memória, sem a utilização de um banco de dados. ",
+      "Sistema de cadastro de empresas com interface moderna, foco em usabilidade e experiência de gerenciamento simples.",
     imageUrl: "/CRUD.png",
     githubUrl: "https://github.com/MatosRicardo/CRUD",
+    tags: ["React", "Tailwind", "Express"],
   },
   {
     id: "project4",
     title: "Jogo da Velha",
     description:
-      "Um pequeno jogo da velha desenvolvido em React, onde você pode se divertir jogando com um amigo. Este projeto foi criado com base no curso do Maximilian Schwarzmüller na Udemy, trazendo uma experiência interativa e dinâmica.",
+      "Pequeno projeto interativo desenvolvido com React, com foco em lógica e experiência divertida para o usuário.",
     imageUrl: "/jogo.png",
     githubUrl: "https://github.com/MatosRicardo/JogoDaVelhaReact",
+    tags: ["React", "JavaScript"],
   },
   {
     id: "project5",
     title: "Mind7",
     description:
-      "A Mind7 é uma plataforma de assistência psicológica criada com HTML, CSS, JavaScript e Figma. O design intuitivo foi planejado no Figma, enquanto o JavaScript adiciona interatividade. A página oferece informações sobre profissionais, agendamentos e conteúdos sobre saúde mental.",
+      "Projeto de landing page voltado à saúde mental, com interface intuitiva e conteúdo bem estruturado para o público.",
     imageUrl: "/Mind7.png",
     githubUrl: "https://github.com/MatosRicardo/Mind7",
     liveUrl: "https://mind7.vercel.app",
+    tags: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: "project6",
     title: "Sistema Escolar",
     description:
-      "Uma API REST desenvolvida em Java com Spring Boot para gerenciar o cadastro de alunos e aulas. Criada durante o curso no Instituto PROA, essa API permite realizar operações de criação, leitura, atualização e exclusão (CRUD), garantindo uma estrutura eficiente e escalável. O banco de dados MySQL foi utilizado para armazenar e organizar as informações de forma segura e otimizada.",
+      "API REST para gestão de alunos e aulas, criada com foco em organização, escalabilidade e boas práticas de backend.",
     imageUrl: "/sistemaEscolar.png",
     githubUrl: "https://github.com/MatosRicardo/Springboot_SistemaEscolar",
+    tags: ["Java", "Spring Boot", "MySQL"],
   },
   {
     id: "project7",
-    title: "EM BREVE...",
+    title: "Em breve",
     description:
-      "A foto é um spoiler do projeto que está por vir!\n Feat: Beatriz Marques e Paulo Nalcino",
+      "Novo projeto em desenvolvimento, com foco em inovação e experiência digital ainda mais completa.",
     imageUrl: "/spoiler.png",
     githubUrl: "https://github.com/MatosRicardo/Fintech_Klyra",
+    tags: ["Em construção"],
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-black text-white mt-30">
-      <main id="projects" className="container mx-auto py-12 px-4 ">
-        <h1 className="text-4xl font-bold mb-12 text-center text-orange-600">
-          Meus Projetos
-        </h1>
-        <div className="space-y-24">
-          {projects.map((project, index) => (
-            <div
+    <section id="projects" className="px-6 py-24 sm:py-28">
+      <div className="container mx-auto max-w-6xl">
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
+            Projetos
+          </p>
+          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            Algumas soluções que desenvolvi
+          </h2>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-2">
+          {projects.map((project) => (
+            <article
               key={project.id}
-              className={`flex flex-col ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } gap-8 items-center`}
+              className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-2xl shadow-black/20"
             >
-              <div className="w-full md:w-1/2">
+              <div className="relative h-56 overflow-hidden">
                 <Image
                   src={project.imageUrl || "/placeholder.svg"}
                   alt={project.title}
-                  width={600}
-                  height={400}
-                  className="rounded-lg object-cover w-full"
+                  fill
+                  className="object-cover"
                 />
               </div>
-              <div className="w-full md:w-1/2 space-y-4">
-                <h2 className="text-2xl font-bold text-orange-600">
-                  {project.title}
-                </h2>
-                <p className="text-gray-300">{project.description}</p>
-                <div className="flex gap-4">
+              <div className="space-y-4 p-6">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-300">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
+                <p className="text-sm leading-7 text-gray-300">{project.description}</p>
+                <div className="flex flex-wrap gap-3 pt-2">
                   <Button
                     asChild
                     variant="outline"
-                    className="text-black group relative hover:text-orange-600 hover:border-orange-600"
+                    className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:text-orange-400"
                   >
                     <Link
                       href={project.githubUrl}
@@ -115,14 +131,13 @@ export default function ProjectsPage() {
                     >
                       <Github className="mr-2 h-4 w-4" />
                       GitHub
-                      <span className="absolute inset-0 bg-orange-600/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </Link>
                   </Button>
                   {project.liveUrl && (
                     <Button
                       asChild
                       variant="outline"
-                      className="text-black group relative hover:text-orange-600 hover:border-orange-600"
+                      className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:text-orange-400"
                     >
                       <Link
                         href={project.liveUrl}
@@ -130,17 +145,16 @@ export default function ProjectsPage() {
                         rel="noopener noreferrer"
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Visitar Site
-                        <span className="absolute inset-0 bg-orange-600/20 rounded-md filter blur-md opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        Visitar
                       </Link>
                     </Button>
                   )}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
   );
 }
