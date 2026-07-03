@@ -75,9 +75,9 @@ export default function Home() {
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter mb-6">
             Olá, sou o <span className="text-orange-600">Ricardo Ribeiro</span>
           </h1>
-          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-orange-600 mb-6">
+          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-white mb-6">
             <Image
-              src="/imgSobre.jpg"
+              src="/perfil_futuro.jpeg"
               alt="Ricardo Matos"
               fill
               className="object-cover"
@@ -86,8 +86,6 @@ export default function Home() {
           </div>
           <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
             <span className="text-orange-600">Desenvolvedor</span> Full-Stack
-            <br />
-            Software Engineer
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
