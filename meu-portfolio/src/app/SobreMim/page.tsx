@@ -6,6 +6,21 @@ const highlights = [
   "Constante evolução em tecnologias modernas e boas práticas",
 ];
 
+const trajectory = [
+  {
+    period: "mai de 2025 - o momento",
+    title: "Software Engineer Intern · Itaú Unibanco",
+    description:
+      "Atuo como estagiario no desenvolvimento de interfaces modernas com React, Next.js e Angular, além de criar e manter APIs e lambdas com Node.js e Python. Também trabalho com AWS, Terraform, testes e boas práticas de qualidade de software.",
+  },
+  {
+    period: "jun de 2024 - dez de 2024",
+    title: "Bootcamp · Instituto PROA",
+    description:
+      "Participei de uma formação prática voltada para desenvolvimento full stack, com foco em construção de soluções reais, trabalho em equipe e aplicação de tecnologias modernas.",
+  },
+];
+
 export default function SobreMim() {
   return (
     <section id="about" className="bg-[#060606] px-6 py-24 sm:py-28">

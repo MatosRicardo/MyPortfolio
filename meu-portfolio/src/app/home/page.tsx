@@ -7,6 +7,21 @@ import Projetos from "@/app/Projetos/page";
 import Habilidades from "@/app/habilidades/page";
 import Contato from "@/app/contato/page";
 
+const trajectoryItems = [
+  {
+    period: "mai de 2025 - o momento",
+    title: "Estágio em Software Engineer Intern · Itaú Unibanco",
+    description:
+      "Desenvolvimento de aplicações web modernas e responsivas utilizando Angular, React e Next.js, além da criação e manutenção de APIs e funções serverless com Node.js e Python. Experiência na construção de componentes reutilizáveis com TypeScript e Angular Material, integração de aplicações por meio de APIs REST e implementação de soluções em AWS, utilizando serviços como Lambda, S3, DynamoDB e API Gateway, além de infraestrutura como código com Terraform. Atuação com versionamento em Git, participação em code reviews, desenvolvimento de testes unitários, refatoração de código e aplicação contínua de boas práticas para garantir qualidade, escalabilidade e eficiência no desenvolvimento de software.",
+  },
+  {
+    period: "jun de 2024 - dez de 2024",
+    title: "Bootcamp · Instituto PROA",
+    description:
+      "No Instituto PROA, aprendi fundamentos de programação em Java, desenvolvimento de APIs com Spring Boot e uso de MySQL para bancos de dados. Além disso, adquiri conhecimentos em React, JavaScript, HTML, CSS, Tailwind e Bootstrap. Também desenvolvi habilidades em Figma para design de interfaces, trabalho em equipe, comunicação e resolução de problemas",
+  },
+];
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
@@ -29,6 +44,12 @@ export default function Home() {
               className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
             >
               Sobre
+            </Link>
+            <Link
+              href="#trajectory"
+              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
+            >
+              Trajetória
             </Link>
             <Link
               href="#skills"
@@ -139,6 +160,37 @@ export default function Home() {
 
       <SobreMim />
       <Habilidades />
+      <section id="trajectory" className="px-6 pt-24 pb-20 sm:pt-28">
+        <div className="container mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
+              Trajetória
+            </p>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Meu caminho até aqui
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            {trajectoryItems.map((item) => (
+              <div
+                key={item.period}
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20"
+              >
+                <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange-500">
+                  {item.period}
+                </p>
+                <h3 className="mb-3 text-xl font-semibold text-white">
+                  {item.title}
+                </h3>
+                <p className="text-base leading-7 text-gray-300">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Projetos />
       <Contato />
       <footer className="border-t border-gray-800 py-6">
