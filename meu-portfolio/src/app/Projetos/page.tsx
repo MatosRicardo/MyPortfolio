@@ -111,13 +111,20 @@ export default function ProjectsPage() {
               <div className="space-y-4 p-6">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-300">
+                    <span
+                      key={tag}
+                      className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-300"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
-                <p className="text-sm leading-7 text-gray-300">{project.description}</p>
+                <h3 className="text-2xl font-semibold text-white">
+                  {project.title}
+                </h3>
+                <p className="text-sm leading-7 text-gray-300">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Button
                     asChild

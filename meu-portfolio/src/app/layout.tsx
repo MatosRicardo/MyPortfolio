@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: "Ricardo Matos | Desenvolvedor Full Stack",
   description:
     "Portfólio de Ricardo Matos, desenvolvedor Full Stack com foco em React, Next.js, Angular, AWS e soluções modernas.",
-  keywords: ["Ricardo Matos", "Desenvolvedor Full Stack", "React", "Next.js", "Angular", "AWS"],
+  keywords: [
+    "Ricardo Matos",
+    "Desenvolvedor Full Stack",
+    "React",
+    "Next.js",
+    "Angular",
+    "AWS",
+  ],
   icons: {
     icon: "/perfil.jpg",
   },

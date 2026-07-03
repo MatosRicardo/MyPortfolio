@@ -46,7 +46,9 @@ export default function Habilidades() {
               className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-4 py-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:border-orange-500/40"
             >
               <Icon size={72} className="mb-4 text-white" />
-              <p className="text-sm font-medium text-gray-200 sm:text-base">{label}</p>
+              <p className="text-sm font-medium text-gray-200 sm:text-base">
+                {label}
+              </p>
             </div>
           ))}
         </div>

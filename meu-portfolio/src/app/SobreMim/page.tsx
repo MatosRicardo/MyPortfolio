@@ -22,24 +22,29 @@ export default function SobreMim() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
             <p className="text-lg leading-8 text-gray-300">
-              Sou Ricardo Matos, desenvolvedor Full Stack com forte interesse em tecnologia,
-              inovação e criação de produtos que geram impacto real. Atualmente, curso Ciência
-              da Computação e já acumulei experiência prática em ambientes corporativos com foco
-              em automação, cloud e desenvolvimento de interfaces modernas.
+              Sou Ricardo Matos, desenvolvedor Full Stack com forte interesse em
+              tecnologia, inovação e criação de produtos que geram impacto real.
+              Atualmente, curso Ciência da Computação e já acumulei experiência
+              prática em ambientes corporativos com foco em automação, cloud e
+              desenvolvimento de interfaces modernas.
             </p>
             <p className="text-lg leading-8 text-gray-300">
-              Atuo na implementação de soluções com Angular, Python, AWS e boas práticas de
-              desenvolvimento, sempre buscando entregar código limpo, escalável e alinhado às
-              necessidades do negócio.
+              Atuo na implementação de soluções com Angular, Python, AWS e boas
+              práticas de desenvolvimento, sempre buscando entregar código
+              limpo, escalável e alinhado às necessidades do negócio.
             </p>
 
             <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 sm:grid-cols-3">
               <div>
-                <p className="text-2xl font-semibold text-orange-500">+2 anos</p>
+                <p className="text-2xl font-semibold text-orange-500">
+                  +2 anos
+                </p>
                 <p className="text-sm text-gray-400">estudo e prática</p>
               </div>
               <div>
-                <p className="text-2xl font-semibold text-orange-500">Full Stack</p>
+                <p className="text-2xl font-semibold text-orange-500">
+                  Full Stack
+                </p>
                 <p className="text-sm text-gray-400">front e back</p>
               </div>
               <div>
