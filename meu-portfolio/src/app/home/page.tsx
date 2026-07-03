@@ -88,15 +88,16 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col justify-center items-center -mt-5 px-4 md:px-0 bg-[url('/fundo5.jpg')] bg-cover bg-center bg-no-repeat">
+      <main className="relative flex flex-col items-center justify-center overflow-hidden bg-[url('/fundo5.jpg')] bg-cover bg-center bg-no-repeat px-4 md:px-0">
+        <div className="absolute inset-0 bg-black/70" />
         <section
           id="home"
-          className="container py-12 md:py-24 lg:py-32 flex flex-col items-center text-center max-w-3xl mx-auto"
+          className="relative container mx-auto flex max-w-3xl flex-col items-center py-12 text-center md:py-24 lg:py-32"
         >
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter mb-6">
-            Olá, sou o <span className="text-orange-600">Ricardo Ribeiro</span>
+          <h1 className="mb-6 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-5xl">
+            Olá, sou o <span className="text-orange-600">Ricardo Matos</span>
           </h1>
-          <div className="relative h-[180px] sm:h-[250px] md:h-[300px] w-[180px] sm:w-[250px] md:w-[300px] overflow-hidden rounded-full border-4 border-white mb-6">
+          <div className="relative mb-6 h-[180px] w-[180px] overflow-hidden rounded-full border-4 border-orange-500/40 shadow-2xl shadow-orange-500/20 sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px]">
             <Image
               src="/perfil_futuro.jpeg"
               alt="Ricardo Matos"
@@ -105,11 +106,11 @@ export default function Home() {
               priority
             />
           </div>
-          <p className="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
+          <p className="mb-6 text-lg font-bold text-white sm:text-2xl md:text-3xl">
             <span className="text-orange-600">Desenvolvedor</span> Full-Stack
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap justify-center gap-4">
             <Button
               variant="outline"
               size="lg"
