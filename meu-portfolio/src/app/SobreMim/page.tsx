@@ -29,9 +29,6 @@ export default function SobreMim() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
             Sobre mim
           </p>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Construindo soluções inteligentes com propósito
-          </h2>
         </div>
 
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">

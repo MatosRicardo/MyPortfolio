@@ -89,9 +89,6 @@ export default function ProjectsPage() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
             Projetos
           </p>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Algumas soluções que desenvolvi
-          </h2>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
