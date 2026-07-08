@@ -9,23 +9,14 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Ricardo Matos | Desenvolvedor Full Stack",
-  description:
-    "Portfólio de Ricardo Matos, desenvolvedor Full Stack com foco em React, Next.js, Angular, AWS.",
-  keywords: [
-    "Ricardo Matos",
-    "Desenvolvedor Full Stack",
-    "React",
-    "Next.js",
-    "Angular",
-    "AWS",
-  ],
+  description: "Portfólio de Ricardo Ribeiro, desenvolvedor Full Stack.",
+  keywords: ["Ricardo Matos", "Desenvolvedor Full Stack"],
   icons: {
     icon: "/perfil.jpg",
   },
   openGraph: {
     title: "Ricardo Matos | Desenvolvedor Full Stack",
-    description:
-      "Portfólio de Ricardo Matos, desenvolvedor Full Stack com foco em React, Next.js, Angular, AWS e soluções modernas.",
+    description: "Portfólio de Ricardo Matos, desenvolvedor Full Stack.",
     type: "website",
   },
 };
