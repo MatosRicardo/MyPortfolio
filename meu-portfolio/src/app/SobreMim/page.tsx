@@ -23,7 +23,7 @@ const trajectory = [
 
 export default function SobreMim() {
   return (
-    <section id="about" className="bg-[#060606] px-6 py-24 sm:py-28">
+    <section id="about" className="px-6 py-24 sm:py-28">
       <div className="container mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
