@@ -6,13 +6,13 @@ export default function Contato() {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center min-h-screen pt-24 pb-16 bg-black"
+      className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden pt-24 pb-16 bg-transparent"
     >
       <h1 className="text-4xl font-bold mb-12 text-center text-orange-600">
         Contatos
       </h1>
-      <section className="container flex flex-col md:flex-row items-center justify-center gap-10 px-6">
-        <div className="bg-[#0a0a0a] p-10 rounded-2xl shadow-lg w-full max-w-[500px] flex flex-col justify-center">
+      <section className="container relative z-10 flex flex-col items-center justify-center gap-10 px-6 md:flex-row">
+        <div className="flex w-full max-w-[500px] flex-col justify-center rounded-2xl border border-white/10 bg-white/5 p-10 shadow-2xl shadow-black/30 backdrop-blur-sm">
           <h2 className="text-3xl font-bold text-orange-600 mb-4">
             Vamos Conversar!
           </h2>

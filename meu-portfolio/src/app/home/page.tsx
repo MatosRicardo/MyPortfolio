@@ -24,8 +24,8 @@ const trajectoryItems = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-black text-white">
-      <header className="sticky top-0 z-10 w-full border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
+    <div className="flex min-h-screen flex-col bg-transparent text-white">
+      <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-black/60 backdrop-blur-xl supports-[backdrop-filter]:bg-black/40">
         <div className="container mx-auto flex h-13 items-center justify-between px-5 md:px-10">
           <div className="text-lg md:text-xl font-bold">
             <Link href="/" className="hover:text-orange-600 transition-colors">
@@ -88,8 +88,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="relative flex flex-col items-center justify-center overflow-hidden bg-[url('/fundo5.jpg')] bg-cover bg-center bg-no-repeat px-4 md:px-0">
-        <div className="absolute inset-0 bg-black/70" />
+      <main className="relative flex flex-col items-center justify-center overflow-hidden bg-transparent px-4 md:px-0">
         <section
           id="home"
           className="relative container mx-auto flex max-w-3xl flex-col items-center py-12 text-center md:py-24 lg:py-32"
