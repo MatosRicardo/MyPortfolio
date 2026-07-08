@@ -95,7 +95,7 @@ export default function ProjectsPage() {
           {projects.map((project) => (
             <article
               key={project.id}
-              className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-2xl shadow-black/20"
+              className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-[0_0_40px_rgba(255,255,255,0.04)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/40"
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
@@ -126,7 +126,7 @@ export default function ProjectsPage() {
                   <Button
                     asChild
                     variant="outline"
-                    className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:text-orange-400"
+                    className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
                   >
                     <Link
                       href={project.githubUrl}
@@ -141,7 +141,7 @@ export default function ProjectsPage() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:text-orange-400"
+                      className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
                     >
                       <Link
                         href={project.liveUrl}

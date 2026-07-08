@@ -25,17 +25,17 @@ const trajectoryItems = [
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-transparent text-white">
-      <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-black/60 backdrop-blur-xl supports-[backdrop-filter]:bg-black/40">
+      <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-black/70 backdrop-blur-xl supports-[backdrop-filter]:bg-black/45">
         <div className="container mx-auto flex h-13 items-center justify-between px-5 md:px-10">
-          <div className="text-lg md:text-xl font-bold">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+          <div className="text-lg font-bold tracking-[0.2em] text-white md:text-xl">
+            <Link href="/" className="transition-colors hover:text-orange-500">
               RicardoMatos.dev
             </Link>
           </div>
-          <nav className="hidden md:flex gap-4 md:gap-6">
+          <nav className="hidden gap-4 md:flex md:gap-6">
             <Link
               href="#home"
-              className="relative text-xs md:text-sm font-medium transition-colors hover:text-orange-600"
+              className="relative text-xs font-medium text-gray-300 transition-all duration-300 hover:text-orange-500 md:text-sm"
             >
               Home
             </Link>
@@ -73,7 +73,7 @@ export default function Home() {
           <Button
             variant="outline"
             size="sm"
-            className="hidden md:flex text-black hover:text-orange-600 hover:border-orange-600"
+            className="hidden border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400 md:flex"
             asChild
           >
             <Link
@@ -93,10 +93,10 @@ export default function Home() {
           id="home"
           className="relative container mx-auto flex max-w-3xl flex-col items-center py-12 text-center md:py-24 lg:py-32"
         >
-          <h1 className="mb-6 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-5xl">
-            Olá, sou o <span className="text-orange-600">Ricardo Matos</span>
+          <h1 className="mb-6 text-2xl font-bold tracking-[0.08em] text-white sm:text-3xl md:text-5xl">
+            Olá, sou o <span className="text-orange-500">Ricardo</span>
           </h1>
-          <div className="relative mb-6 h-[180px] w-[180px] overflow-hidden rounded-full border-4 border-orange-500/40 shadow-2xl shadow-orange-500/20 sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px]">
+          <div className="relative mb-6 h-[180px] w-[180px] overflow-hidden rounded-full border-4 border-orange-500/40 shadow-[0_0_60px_rgba(249,115,22,0.2)] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px]">
             <Image
               src="/perfil_futuro.jpeg"
               alt="Ricardo Matos"
@@ -106,7 +106,7 @@ export default function Home() {
             />
           </div>
           <p className="mb-6 text-lg font-bold text-white sm:text-2xl md:text-3xl">
-            <span className="text-orange-600">Desenvolvedor</span> Full-Stack
+            <span className="text-orange-500">Desenvolvedor</span> Full-Stack
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -147,7 +147,7 @@ export default function Home() {
           <Button
             variant="outline"
             size="sm"
-            className="flex text-black hover:text-orange-600 hover:border-orange-600 md:hidden mt-6"
+            className="mt-6 flex border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400 md:hidden"
             asChild
           >
             <Link href="/curriculo.pdf" download target="_blank">
@@ -175,7 +175,7 @@ export default function Home() {
             {trajectoryItems.map((item) => (
               <div
                 key={item.period}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20"
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_0_40px_rgba(255,255,255,0.04)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
               >
                 <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange-500">
                   {item.period}

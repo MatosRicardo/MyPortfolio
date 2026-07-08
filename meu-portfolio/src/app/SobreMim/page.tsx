@@ -46,7 +46,7 @@ export default function SobreMim() {
               limpo, escalável e alinhado às necessidades do negócio.
             </p>
 
-            <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 sm:grid-cols-3">
+            <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_0_40px_rgba(255,255,255,0.04)] backdrop-blur-sm sm:grid-cols-3">
               <div>
                 <p className="text-2xl font-semibold text-orange-500">
                   +2 anos
@@ -77,7 +77,7 @@ export default function SobreMim() {
 
           <div className="relative mx-auto w-full max-w-[380px]">
             <div className="absolute inset-0 rounded-[2rem] bg-orange-500/20 blur-3xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2 shadow-2xl shadow-orange-500/10">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2 shadow-[0_0_60px_rgba(255,255,255,0.06)] backdrop-blur-sm">
               <Image
                 src="/imgSobre.jpeg"
                 alt="Foto de Ricardo Matos"

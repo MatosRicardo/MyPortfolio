@@ -12,7 +12,7 @@ export default function Contato() {
         Contatos
       </h1>
       <section className="container relative z-10 flex flex-col items-center justify-center gap-10 px-6 md:flex-row">
-        <div className="flex w-full max-w-[500px] flex-col justify-center rounded-2xl border border-white/10 bg-white/5 p-10 shadow-2xl shadow-black/30 backdrop-blur-sm">
+        <div className="flex w-full max-w-[500px] flex-col justify-center rounded-2xl border border-white/10 bg-white/5 p-10 shadow-[0_0_50px_rgba(255,255,255,0.05)] backdrop-blur-sm">
           <h2 className="text-3xl font-bold text-orange-600 mb-4">
             Vamos Conversar!
           </h2>
@@ -23,27 +23,27 @@ export default function Contato() {
           <div className="flex flex-col gap-3">
             <Link
               href="mailto:ricardoribeirodematos@gmail.com"
-              className="flex items-center gap-2 text-white hover:text-orange-600 text-lg"
+              className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
             >
               <Mail className="w-6 h-6" /> ricardoribeirodematos@gmail.com
             </Link>
             <Link
               href="https://wa.me/5511985036906"
-              className="flex items-center gap-2 text-white hover:text-orange-600 text-lg"
+              className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
             >
               <MessageCircleIcon className="w-6 h-6" /> WhatsApp
             </Link>
             <Link
               href="https://linkedin.com/in/ricardomatos-developer"
               target="_blank"
-              className="flex items-center gap-2 text-white hover:text-orange-600 text-lg"
+              className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
             >
               <Linkedin className="w-6 h-6" /> LinkedIn
             </Link>
             <Link
               href="https://github.com/MatosRicardo"
               target="_blank"
-              className="flex items-center gap-2 text-white hover:text-orange-600 text-lg"
+              className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
             >
               <Github className="w-6 h-6" /> GitHub
             </Link>
