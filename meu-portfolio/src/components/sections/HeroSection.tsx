@@ -6,16 +6,21 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <main className="relative flex flex-col items-center justify-center overflow-hidden bg-transparent px-4 md:px-0">
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute left-1/2 top-0 h-[360px] w-[360px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
+        <div className="absolute right-10 top-1/3 h-[220px] w-[220px] rounded-full bg-white/10 blur-3xl" />
+      </div>
       <section
         id="home"
         className="relative container mx-auto flex max-w-3xl flex-col items-center py-12 text-center md:py-24 lg:py-32"
       >
         <h1 className="mb-6 text-2xl font-bold tracking-[0.08em] text-white sm:text-3xl md:text-5xl">
-          Olá, sou o <span className="text-orange-500">Ricardo Matos</span>
+          Olá, sou o <span className="text-emerald-500">Ricardo Matos</span>
         </h1>
-        <div className="relative mb-6 h-[180px] w-[180px] overflow-hidden rounded-full border-4 border-orange-500/40 shadow-[0_0_60px_rgba(249,115,22,0.2)] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px]">
+        <div className="relative mb-6 inline-flex overflow-hidden rounded-full border-4 border-emerald-500/40 shadow-[0_0_80px_rgba(16,185,129,0.24)] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] h-[180px] w-[180px]">
+          <div className="absolute inset-x-0 bottom-0 mx-auto h-24 w-24 rounded-full bg-emerald-500/10 blur-3xl" />
           <Image
-            src="/perfil_futuro.jpeg"
+            src="/perfilv2.jpeg"
             alt="Ricardo Matos"
             fill
             className="object-cover"
@@ -23,14 +28,14 @@ export function HeroSection() {
           />
         </div>
         <p className="mb-6 text-lg font-bold text-white sm:text-2xl md:text-3xl">
-          <span className="text-orange-500">Desenvolvedor</span> Full-Stack
+          <span className="text-emerald-500">Desenvolvedor</span> Full-Stack
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
           <Button
             variant="outline"
             size="lg"
-            className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+            className="border-white/15 bg-white/10 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/15 hover:text-emerald-300"
             asChild
           >
             <Link
@@ -47,7 +52,7 @@ export function HeroSection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+            className="border-white/15 bg-white/10 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/15 hover:text-emerald-300"
             asChild
           >
             <Link
@@ -65,7 +70,7 @@ export function HeroSection() {
         <Button
           variant="outline"
           size="sm"
-          className="mt-6 flex border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400 md:hidden"
+          className="mt-6 flex border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300 md:hidden"
           asChild
         >
           <Link href="/curriculo.pdf" download target="_blank">

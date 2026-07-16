@@ -44,7 +44,7 @@ export function ProjectsSection() {
                   <Button
                     asChild
                     variant="outline"
-                    className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+                    className="border-white/15 bg-white/5 text-white hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300"
                   >
                     <Link
                       href={project.githubUrl}
@@ -60,7 +60,7 @@ export function ProjectsSection() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+                      className="border-white/15 bg-white/5 text-white hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300"
                     >
                       <Link
                         href={project.liveUrl}

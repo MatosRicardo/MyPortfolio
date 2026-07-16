@@ -25,7 +25,7 @@ export function ContactSection() {
             <div className="flex flex-col gap-3">
               <Link
                 href="mailto:ricardoribeirodematos@gmail.com"
-                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
+                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-emerald-300"
                 aria-label="Enviar e-mail para Ricardo Matos"
               >
                 <Mail className="h-6 w-6" aria-hidden="true" />
@@ -33,7 +33,7 @@ export function ContactSection() {
               </Link>
               <Link
                 href="https://wa.me/5511985036906"
-                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
+                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-emerald-300"
                 aria-label="Enviar mensagem no WhatsApp"
               >
                 <MessageCircleIcon className="h-6 w-6" aria-hidden="true" />
@@ -43,7 +43,7 @@ export function ContactSection() {
                 href="https://linkedin.com/in/ricardomatos-developer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
+                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-emerald-300"
                 aria-label="Visitar perfil do LinkedIn"
               >
                 <Linkedin className="h-6 w-6" aria-hidden="true" />
@@ -53,7 +53,7 @@ export function ContactSection() {
                 href="https://github.com/MatosRicardo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-orange-400"
+                className="flex items-center gap-2 text-lg text-white transition-colors duration-300 hover:text-emerald-300"
                 aria-label="Visitar perfil do GitHub"
               >
                 <Github className="h-6 w-6" aria-hidden="true" />

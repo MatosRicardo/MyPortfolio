@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Portfólio de Ricardo Ribeiro, desenvolvedor Full Stack.",
   keywords: ["Ricardo Matos", "Desenvolvedor Full Stack"],
   icons: {
-    icon: "/perfil.jpg",
+    icon: "/fav.jpeg",
   },
   openGraph: {
     title: "Ricardo Matos | Desenvolvedor Full Stack",

@@ -50,7 +50,7 @@ export function AboutSection() {
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span
-                    className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"
+                    className="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-500/90 shadow-[0_0_10px_rgba(16,185,129,0.3)]"
                     aria-hidden="true"
                   />
                   <span>{item}</span>
@@ -60,8 +60,8 @@ export function AboutSection() {
           </div>
 
           <div className="relative mx-auto w-full max-w-[380px]">
-            <div className="absolute inset-0 rounded-[2rem] bg-orange-500/20 blur-3xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2 shadow-[0_0_60px_rgba(255,255,255,0.06)] backdrop-blur-sm">
+            <div className="absolute inset-0 rounded-[2rem] bg-emerald-500/20 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-emerald-500/15 bg-black/20 p-2 shadow-[0_0_60px_rgba(16,185,129,0.12)] backdrop-blur-sm">
               <Image
                 src="/imgSobre.jpeg"
                 alt="Foto de Ricardo Matos"

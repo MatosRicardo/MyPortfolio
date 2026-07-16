@@ -1,5 +1,6 @@
 import {
   AboutSection,
+  CertificationsSection,
   ContactSection,
   ExperienceSection,
   HeroSection,
@@ -18,6 +19,7 @@ export default function PortfolioHomepage() {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
+      <CertificationsSection />
       <ContactSection />
       <SiteFooter />
     </div>

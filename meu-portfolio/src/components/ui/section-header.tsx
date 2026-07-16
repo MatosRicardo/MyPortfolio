@@ -16,7 +16,7 @@ export function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <header className={cn("mb-12 text-center", className)}>
-      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-emerald-500">
         {eyebrow}
       </p>
       <h2 className="text-3xl font-bold text-white sm:text-4xl">{title}</h2>

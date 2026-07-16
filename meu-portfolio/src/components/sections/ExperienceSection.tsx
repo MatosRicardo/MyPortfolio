@@ -15,7 +15,7 @@ export function ExperienceSection() {
         <div className="space-y-6">
           {trajectoryItems.map((item) => (
             <Card key={item.period} as="article" className="p-6">
-              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange-500">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-500">
                 {item.period}
               </p>
               <h3 className="mb-3 text-xl font-semibold text-white">
