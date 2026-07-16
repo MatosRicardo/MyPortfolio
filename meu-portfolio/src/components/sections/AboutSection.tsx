@@ -1,15 +1,17 @@
 import Image from "next/image";
 import { highlights } from "@/data/portfolio";
+import { SectionHeader } from "@/components/ui";
+import { StatCard } from "@/components/ui/stat-card";
 
 export function AboutSection() {
   return (
     <section id="about" className="px-6 py-24 sm:py-28">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-12 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
-            Sobre mim
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow="Sobre mim"
+          title="Um pouco do meu perfil"
+          description="Desenvolvedor Full Stack com experiência em projetos web, cloud e interfaces modernas."
+        />
 
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
@@ -17,7 +19,7 @@ export function AboutSection() {
               Sou Ricardo Matos, desenvolvedor Full Stack com forte interesse em
               tecnologia, inovação e criação de produtos que geram impacto real.
               Atualmente, curso Ciência da Computação e já acumulei experiência
-              prática em ambientes corporativos com foco em automação, cloud e
+              prática em ambientes corporativos com foco em cloud e
               desenvolvimento de interfaces modernas.
             </p>
             <p className="text-lg leading-8 text-gray-300">
@@ -26,29 +28,31 @@ export function AboutSection() {
               limpo, escalável e alinhado às necessidades do negócio.
             </p>
 
-            <div className="grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_0_40px_rgba(255,255,255,0.04)] backdrop-blur-sm sm:grid-cols-3">
-              <div>
-                <p className="text-2xl font-semibold text-orange-500">
-                  +2 anos
-                </p>
-                <p className="text-sm text-gray-400">estudo e prática</p>
-              </div>
-              <div>
-                <p className="text-2xl font-semibold text-orange-500">
-                  Full Stack
-                </p>
-                <p className="text-sm text-gray-400">front e back</p>
-              </div>
-              <div>
-                <p className="text-2xl font-semibold text-orange-500">Cloud</p>
-                <p className="text-sm text-gray-400">AWS & automação</p>
-              </div>
+            <div className="grid gap-3 sm:grid-cols-3">
+              <StatCard
+                label="Experiência"
+                value="+2 anos"
+                description="Estudo e prática em front e back"
+              />
+              <StatCard
+                label="Especialidade"
+                value="Full Stack"
+                description="Projetos em React, Next.js, Node.js e Java"
+              />
+              <StatCard
+                label="Cloud"
+                value="AWS"
+                description="Uso de serviços serverless e infra como código"
+              />
             </div>
 
             <ul className="space-y-3 text-gray-300">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500" />
+                  <span
+                    className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"
+                    aria-hidden="true"
+                  />
                   <span>{item}</span>
                 </li>
               ))}

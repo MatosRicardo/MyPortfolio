@@ -10,6 +10,8 @@ import TailwindcssOriginal from "devicons-react/lib/icons/TailwindcssOriginal";
 import PythonOriginal from "devicons-react/lib/icons/PythonOriginal";
 import TypescriptOriginal from "devicons-react/lib/icons/TypescriptOriginal";
 import JavascriptOriginal from "devicons-react/lib/icons/JavascriptOriginal";
+import { Card } from "@/components/ui/card";
+import { SectionHeader } from "@/components/ui";
 
 const technologies = [
   { Icon: JavascriptOriginal, label: "JavaScript" },
@@ -26,30 +28,27 @@ const technologies = [
   { Icon: AmazonwebservicesOriginalWordmark, label: "AWS" },
 ];
 
-export default function Habilidades() {
+export function SkillsSection() {
   return (
     <section id="skills" className="px-6 py-24 sm:py-28">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-12 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
-            Tecnologias
-          </p>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Ferramentas com as quais trabalho
-          </h2>
-        </div>
+        <SectionHeader
+          eyebrow="Tecnologias"
+          title="Ferramentas com as quais trabalho"
+          description="Linguagens, frameworks e plataformas que uso em projetos reais."
+        />
 
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
           {technologies.map(({ Icon, label }) => (
-            <div
+            <Card
               key={label}
-              className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-4 py-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:border-orange-500/40"
+              className="flex flex-col items-center rounded-[1.75rem] border-white/10 bg-white/5 px-4 py-6 text-center transition-transform duration-300 hover:-translate-y-1 hover:border-orange-500/40"
             >
-              <Icon size={72} className="mb-4 text-white" />
+              <Icon size={72} className="mb-4 text-white" aria-hidden="true" />
               <p className="text-sm font-medium text-gray-200 sm:text-base">
                 {label}
               </p>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

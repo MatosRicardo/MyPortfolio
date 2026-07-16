@@ -1,4 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { SectionHeader } from "@/components/ui";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,19 +11,16 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="px-6 py-24 sm:py-28">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-12 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-orange-500">
-            Projetos
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow="Projetos"
+          title="Projetos selecionados"
+          description="Uma seleção de projetos que demonstra habilidades em frontend, backend e experiência de usuário."
+        />
 
         <div className="grid gap-8 lg:grid-cols-2">
           {projects.map((project) => (
-            <article
-              key={project.id}
-              className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-[0_0_40px_rgba(255,255,255,0.04)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/40"
-            >
-              <div className="relative h-56 overflow-hidden">
+            <Card key={project.id} as="article" className="group">
+              <div className="relative h-56 overflow-hidden rounded-t-[1.75rem] border-b border-white/10 bg-black/5 transition duration-300 group-hover:brightness-90">
                 <Image
                   src={project.imageUrl || "/placeholder.svg"}
                   alt={project.title}
@@ -31,12 +31,7 @@ export function ProjectsSection() {
               <div className="space-y-4 p-6">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-300"
-                    >
-                      {tag}
-                    </span>
+                    <Badge key={tag}>{tag}</Badge>
                   ))}
                 </div>
                 <h3 className="text-2xl font-semibold text-white">
@@ -49,36 +44,38 @@ export function ProjectsSection() {
                   <Button
                     asChild
                     variant="outline"
-                    className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+                    className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
                   >
                     <Link
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Abrir repositório do projeto ${project.title} no GitHub`}
                     >
                       <Github className="mr-2 h-4 w-4" />
                       GitHub
                     </Link>
                   </Button>
-                  {project.liveUrl && (
+                  {project.liveUrl ? (
                     <Button
                       asChild
                       variant="outline"
-                      className="border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
+                      className="border-white/15 bg-white/5 text-white hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400"
                     >
                       <Link
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`Visitar projeto ${project.title}`}
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Visitar
                       </Link>
                     </Button>
-                  )}
+                  ) : null}
                 </div>
               </div>
-            </article>
+            </Card>
           ))}
         </div>
       </div>
