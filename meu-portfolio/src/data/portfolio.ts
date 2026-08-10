@@ -21,7 +21,7 @@ export const trajectoryItems = [
     period: "mai de 2025 - o momento",
     title: "Estágio em Software Engineer Intern · Itaú Unibanco",
     description:
-      "Desenvolvimento de aplicações web modernas e responsivas utilizando Angular, React e Next.js, além da criação e manutenção de APIs e funções serverless com Node.js e Python. Experiência na construção de componentes reutilizáveis com TypeScript e Angular Material, integração de aplicações por meio de APIs REST e implementação de soluções em AWS, utilizando serviços como Lambda, S3, DynamoDB e API Gateway, além de infraestrutura como código com Terraform. Atuação com versionamento em Git, participação em code reviews, desenvolvimento de testes unitários, refatoração de código e aplicação contínua de boas práticas para garantir qualidade, escalabilidade e eficiência no desenvolvimento de software.",
+      "Desenvolvimento de aplicações web modernas e responsivas utilizando Angular, React e Next.js, além da criação e manutenção de APIs e funções serverless com Python, Java e Node.js. Experiência na construção de componentes reutilizáveis com TypeScript e Angular Material, integração de aplicações por meio de APIs REST e implementação de soluções em AWS, utilizando serviços como Lambda, S3, DynamoDB e API Gateway, além de infraestrutura como código com Terraform. Atuação com versionamento em Git, participação em code reviews, desenvolvimento de testes unitários, refatoração de código e aplicação contínua de boas práticas para garantir qualidade, escalabilidade e eficiência no desenvolvimento de software.",
   },
   {
     period: "jun de 2024 - dez de 2024",

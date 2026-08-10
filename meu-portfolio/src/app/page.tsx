@@ -1,6 +1,6 @@
 import {
   AboutSection,
-  CertificationsSection,
+  // CertificationsSection,
   ContactSection,
   ExperienceSection,
   HeroSection,
@@ -19,7 +19,7 @@ export default function PortfolioHomepage() {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
-      <CertificationsSection />
+      {/* <CertificationsSection /> */}
       <ContactSection />
       <SiteFooter />
     </div>

@@ -23,9 +23,10 @@ export function AboutSection() {
               desenvolvimento de interfaces modernas.
             </p>
             <p className="text-lg leading-8 text-gray-300">
-              Atuo na implementação de soluções com Angular, Python, AWS e boas
-              práticas de desenvolvimento, sempre buscando entregar código
-              limpo, escalável e alinhado às necessidades do negócio.
+              Atuo na implementação de soluções com Angular, Next.js, Python,
+              Java, AWS e boas práticas de desenvolvimento, sempre buscando
+              entregar código limpo, escalável e alinhado às necessidades do
+              negócio.
             </p>
 
             <div className="grid gap-3 sm:grid-cols-3">
