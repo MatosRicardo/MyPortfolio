@@ -88,15 +88,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/MatosRicardo/Springboot_SistemaEscolar",
     tags: ["Java", "Spring Boot", "MySQL"],
   },
-  {
-    id: "project7",
-    title: "Em breve",
-    description:
-      "Novo projeto em desenvolvimento, com foco em inovação e experiência digital ainda mais completa.",
-    imageUrl: "/spoiler.png",
-    githubUrl: "https://github.com/MatosRicardo/Fintech_Klyra",
-    tags: ["Em construção"],
-  },
 ];
 
 export type SocialLink = {
