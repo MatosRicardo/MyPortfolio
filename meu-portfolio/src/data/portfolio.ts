@@ -98,6 +98,16 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/MatosRicardo/Springboot_SistemaEscolar",
     tags: ["Java", "Spring Boot", "MySQL"],
   },
+  {
+    id: "project8",
+    title: "Klyra",
+    description:
+      "Klyra é uma fintech que oferece uma plataforma sem anuidade e com foco em educação financeira, ajudando usuários a entender melhor temas como Ações, FII (Fundos de Investimento Imobiliário) e BDR (Brazilian Depositary Receipts).",
+    imageUrl: "/Klyra.png",
+    githubUrl: "https://github.com/MatosRicardo/Fintech_Klyra",
+    liveUrl: "https://fintech-klyra-kly.vercel.app",
+    tags: ["Fintech", "Educação financeira", "React"],
+  },
 ];
 
 export type SocialLink = {
