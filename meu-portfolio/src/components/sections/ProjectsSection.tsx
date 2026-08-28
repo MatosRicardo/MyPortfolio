@@ -41,21 +41,23 @@ export function ProjectsSection() {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="border-white/15 bg-white/5 text-white hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300"
-                  >
-                    <Link
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Abrir repositório do projeto ${project.title} no GitHub`}
+                  {project.githubUrl ? (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-white/15 bg-white/5 text-white hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300"
                     >
-                      <Github className="mr-2 h-4 w-4" />
-                      GitHub
-                    </Link>
-                  </Button>
+                      <Link
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Abrir repositório do projeto ${project.title} no GitHub`}
+                      >
+                        <Github className="mr-2 h-4 w-4" />
+                        GitHub
+                      </Link>
+                    </Button>
+                  ) : null}
                   {project.liveUrl ? (
                     <Button
                       asChild

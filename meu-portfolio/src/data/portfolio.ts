@@ -5,7 +5,7 @@ export type Project = {
   title: string;
   description: string;
   imageUrl: string;
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   tags: string[];
 };
@@ -43,6 +43,16 @@ export const projects: Project[] = [
   },
   {
     id: "project2",
+    title: "Planora",
+    description:
+      "Aplicação frontend para organizar eventos em um único lugar, reunindo tarefas, orçamento, convidados e cronograma em uma interface simples e objetiva.",
+    imageUrl: "/planora.PNG",
+    githubUrl: "https://github.com/MatosRicardo/planejador_evetos",
+    liveUrl: "https://planejadorevetos.vercel.app/dashboard",
+    tags: ["Angular", "TypeScript"],
+  },
+  {
+    id: "project3",
     title: "Proteção Peluda",
     description:
       "Landing page responsiva e visualmente cuidada para promover adoção responsável e conscientização sobre animais.",
@@ -52,7 +62,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "Figma"],
   },
   {
-    id: "project3",
+    id: "project4",
     title: "CRUD",
     description:
       "Sistema de cadastro de empresas com interface moderna, foco em usabilidade e experiência de gerenciamento simples.",
@@ -61,7 +71,7 @@ export const projects: Project[] = [
     tags: ["React", "Tailwind", "Express"],
   },
   {
-    id: "project4",
+    id: "project5",
     title: "Jogo da Velha",
     description:
       "Pequeno projeto interativo desenvolvido com React, com foco em lógica e experiência divertida para o usuário.",
@@ -70,7 +80,7 @@ export const projects: Project[] = [
     tags: ["React", "JavaScript"],
   },
   {
-    id: "project5",
+    id: "project6",
     title: "Mind7",
     description:
       "Projeto de landing page voltado à saúde mental, com interface intuitiva e conteúdo bem estruturado para o público.",
@@ -80,7 +90,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: "project6",
+    id: "project7",
     title: "Sistema Escolar",
     description:
       "API REST para gestão de alunos e aulas, criada com foco em organização, escalabilidade e boas práticas de backend.",
