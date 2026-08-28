@@ -1,4 +1,4 @@
-# Meu Portfólio 🎨💻
+# Meu Portfólio
 
 Este é o meu primeiro portfólio como desenvolvedor, onde apresento um pouco sobre mim, minhas habilidades e meus projetos. Criado com dedicação para mostrar minha trajetória no mundo da tecnologia.  
 
