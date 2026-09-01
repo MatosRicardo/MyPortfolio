@@ -37,7 +37,7 @@ export function AboutSection() {
               <StatCard
                 label="Especialidade"
                 value="Full Stack"
-                description="Projetos em React, Next.js, Node.js e Java"
+                description="Projetos em React, Next.js, Python e Java"
               />
               <StatCard
                 label="Cloud"
