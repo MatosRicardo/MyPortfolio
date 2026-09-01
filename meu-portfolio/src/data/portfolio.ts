@@ -43,16 +43,6 @@ export const projects: Project[] = [
   },
   {
     id: "project2",
-    title: "Planora",
-    description:
-      "Aplicação frontend para organizar eventos em um único lugar, reunindo tarefas, orçamento, convidados e cronograma em uma interface simples e objetiva.",
-    imageUrl: "/planora.PNG",
-    githubUrl: "https://github.com/MatosRicardo/planejador_evetos",
-    liveUrl: "https://planejadorevetos.vercel.app/dashboard",
-    tags: ["Angular", "TypeScript"],
-  },
-  {
-    id: "project3",
     title: "Proteção Peluda",
     description:
       "Landing page responsiva e visualmente cuidada para promover adoção responsável e conscientização sobre animais.",
@@ -62,7 +52,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "Figma"],
   },
   {
-    id: "project4",
+    id: "project3",
     title: "CRUD",
     description:
       "Sistema de cadastro de empresas com interface moderna, foco em usabilidade e experiência de gerenciamento simples.",
@@ -71,7 +61,7 @@ export const projects: Project[] = [
     tags: ["React", "Tailwind", "Express"],
   },
   {
-    id: "project5",
+    id: "project4",
     title: "Jogo da Velha",
     description:
       "Pequeno projeto interativo desenvolvido com React, com foco em lógica e experiência divertida para o usuário.",
@@ -80,7 +70,7 @@ export const projects: Project[] = [
     tags: ["React", "JavaScript"],
   },
   {
-    id: "project6",
+    id: "project5",
     title: "Mind7",
     description:
       "Projeto de landing page voltado à saúde mental, com interface intuitiva e conteúdo bem estruturado para o público.",
@@ -90,7 +80,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: "project7",
+    id: "project6",
     title: "Sistema Escolar",
     description:
       "API REST para gestão de alunos e aulas, criada com foco em organização, escalabilidade e boas práticas de backend.",
@@ -99,7 +89,7 @@ export const projects: Project[] = [
     tags: ["Java", "Spring Boot", "MySQL"],
   },
   {
-    id: "project8",
+    id: "project7",
     title: "Klyra",
     description:
       "Klyra é uma fintech que oferece uma plataforma sem anuidade e com foco em educação financeira, ajudando usuários a entender melhor temas como Ações, FII (Fundos de Investimento Imobiliário) e BDR (Brazilian Depositary Receipts).",
