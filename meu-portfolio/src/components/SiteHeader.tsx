@@ -57,11 +57,7 @@ export function SiteHeader() {
           className="hidden border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300 md:flex"
           asChild
         >
-          <Link
-            href="/Ricardo Matos - Desenvolvedor Full-Stack.pdf"
-            download
-            target="_blank"
-          >
+          <Link href="/curriculo.pdf" download target="_blank">
             <FileText className="mr-2 h-4 w-4" />
             Baixar CV
           </Link>

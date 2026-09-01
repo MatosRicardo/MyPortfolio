@@ -23,6 +23,7 @@ export function HeroSection() {
             src="/perfilv2.jpeg"
             alt="Ricardo Matos"
             fill
+            sizes="(max-width: 768px) 180px, (max-width: 1024px) 250px, 300px"
             className="object-cover"
             priority
           />
