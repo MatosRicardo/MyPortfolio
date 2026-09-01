@@ -3,7 +3,7 @@ import ReactOriginal from "devicons-react/lib/icons/ReactOriginal";
 import { AngularOriginal } from "devicons-react";
 import JavaOriginalWordmark from "devicons-react/lib/icons/JavaOriginalWordmark";
 import SpringOriginal from "devicons-react/lib/icons/SpringOriginal";
-import MongodbOriginal from "devicons-react/lib/icons/MongodbOriginal";
+import DockerOriginal from "devicons-react/lib/icons/DockerOriginal";
 import MysqlOriginalWordmark from "devicons-react/lib/icons/MysqlOriginalWordmark";
 import AmazonwebservicesOriginalWordmark from "devicons-react/lib/icons/AmazonwebservicesOriginalWordmark";
 import TailwindcssOriginal from "devicons-react/lib/icons/TailwindcssOriginal";
@@ -23,7 +23,7 @@ const technologies = [
   { Icon: PythonOriginal, label: "Python" },
   { Icon: JavaOriginalWordmark, label: "Java" },
   { Icon: SpringOriginal, label: "Spring Boot" },
-  { Icon: MongodbOriginal, label: "MongoDB" },
+  { Icon: DockerOriginal, label: "Docker" },
   { Icon: MysqlOriginalWordmark, label: "MySQL" },
   { Icon: AmazonwebservicesOriginalWordmark, label: "AWS" },
 ];

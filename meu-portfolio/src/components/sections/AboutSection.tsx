@@ -16,17 +16,16 @@ export function AboutSection() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
             <p className="text-lg leading-8 text-gray-300">
-              Sou Ricardo Matos, desenvolvedor Full Stack com forte interesse em
+              Sou Ricardo, desenvolvedor Full Stack com forte interesse em
               tecnologia, inovação e criação de produtos que geram impacto real.
-              Atualmente, curso Ciência da Computação e já acumulei experiência
-              prática em ambientes corporativos com foco em cloud e
-              desenvolvimento de interfaces modernas.
+              Atualmente, curso Ciência da Computação (6° semestre) e já
+              acumulei experiência prática em ambientes corporativos com foco em
+              cloud e desenvolvimento de interfaces modernas.
             </p>
             <p className="text-lg leading-8 text-gray-300">
-              Atuo na implementação de soluções com Angular, Next.js, Python,
-              Java, AWS e boas práticas de desenvolvimento, sempre buscando
-              entregar código limpo, escalável e alinhado às necessidades do
-              negócio.
+              Atuo na implementação de soluções com Angular, Python e AWS e boas
+              práticas de desenvolvimento, sempre buscando entregar código
+              limpo, escalável e alinhado às necessidades do negócio.
             </p>
 
             <div className="grid gap-3 sm:grid-cols-3">
