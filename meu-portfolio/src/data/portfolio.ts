@@ -39,6 +39,7 @@ export const projects: Project[] = [
       "Plataforma voltada para conectar estudantes a hackathons e oportunidades reais de aprendizado e networking com empresas.",
     imageUrl: "/kathon.png",
     githubUrl: "https://github.com/Demoday-Kathon/FrontEnd-Kathon",
+    liveUrl: "https://front-end-kathon-one.vercel.app",
     tags: ["React", "Spring Boot", "MySQL"],
   },
   {
