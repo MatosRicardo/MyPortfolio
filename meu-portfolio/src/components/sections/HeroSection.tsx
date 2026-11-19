@@ -102,11 +102,12 @@ export function HeroSection() {
           <div className="relative aspect-[4/4.3] overflow-hidden rounded-[2rem] border border-white/15 bg-white/5 p-2 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
             <div className="relative h-full w-full overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/perfilv2.jpeg"
+                src="/perfil-principal.jpg"
                 alt="Retrato de Ricardo Matos, desenvolvedor Full Stack"
                 fill
                 sizes="(min-width: 1024px) 380px, (min-width: 408px) 360px, calc(100vw - 48px)"
-                className="object-cover object-center"
+                className="object-cover object-bottom"
+                unoptimized
                 priority
               />
             </div>
