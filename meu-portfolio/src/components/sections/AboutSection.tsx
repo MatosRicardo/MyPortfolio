@@ -67,6 +67,7 @@ export function AboutSection() {
                 alt="Ricardo Matos apresentando o projeto Kathon no Demo Day"
                 width={1280}
                 height={853}
+                unoptimized
                 sizes="(max-width: 428px) calc(100vw - 64px), 364px"
                 className="h-[420px] w-full rounded-[1.5rem] object-cover object-[62%_center]"
               />
