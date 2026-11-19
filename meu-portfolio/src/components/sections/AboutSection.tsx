@@ -63,12 +63,12 @@ export function AboutSection() {
             <div className="absolute inset-0 rounded-[2rem] bg-emerald-500/20 blur-3xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-emerald-500/15 bg-black/20 p-2 shadow-[0_0_60px_rgba(16,185,129,0.12)] backdrop-blur-sm">
               <Image
-                src="/imgSobre.jpeg"
-                alt="Foto de Ricardo Matos"
-                width={500}
-                height={600}
-                className="h-[420px] w-full rounded-[1.5rem] object-cover"
-                priority
+                src="/sobre-apresentacao.jpg"
+                alt="Ricardo Matos apresentando o projeto Kathon no Demo Day"
+                width={1280}
+                height={853}
+                sizes="(max-width: 428px) calc(100vw - 64px), 364px"
+                className="h-[420px] w-full rounded-[1.5rem] object-cover object-[62%_center]"
               />
             </div>
           </div>
