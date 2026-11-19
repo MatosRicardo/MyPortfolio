@@ -5,7 +5,7 @@ import { StatCard } from "@/components/ui/stat-card";
 
 export function AboutSection() {
   return (
-    <section id="about" className="px-6 py-24 sm:py-28">
+    <section id="about" className="px-6 pb-24 pt-12 sm:pb-28 sm:pt-16">
       <div className="container mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Sobre mim"

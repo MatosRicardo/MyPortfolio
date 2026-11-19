@@ -12,7 +12,7 @@ export function SiteHeader() {
           </Link>
         </div>
 
-        <nav className="hidden gap-4 md:flex md:gap-6">
+        <nav aria-label="Navegação principal" className="hidden gap-6 lg:flex">
           <Link
             href="#home"
             className="relative text-xs font-medium text-gray-300 transition-all duration-300 hover:text-emerald-500 md:text-sm"
@@ -54,7 +54,7 @@ export function SiteHeader() {
         <Button
           variant="outline"
           size="sm"
-          className="hidden border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300 md:flex"
+          className="hidden border-white/15 bg-white/5 text-white transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-500/10 hover:text-emerald-300 lg:flex"
           asChild
         >
           <Link href="/curriculo.pdf" download target="_blank">
